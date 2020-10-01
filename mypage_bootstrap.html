@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <title> About Me </title>
+      </head>
+
+      <body>
+        <!-- Navigation bar implementation -->
+        <nav class="navbar bg-dark navbar-dark navbar-expand-sm">
+          <ul class="navbar-nav">
+            <!-- Home -->
+            <li class="nav-item active">
+              <a class="nav-link" href="mypage_bootstrap.html"> Home </a>
+            </li>
+            <!-- Projects -->
+            <li class="nav-item"> 
+              <a class="nav-link" href="projects.html"> Projects </a>  
+            </li>   
+          </ul> 
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="navbar-brand" href="https://github.com/SamuelAdamson"> 
+                <img src="img/gitLogo.png" alt="Samuel's Github" height="36px" width="36px">
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Header 1 and Description -->
+        <div class="container bg-light p-3 my-3">
+          <h1> Adamson, Samuel </h1>
+          <div class="card"> 
+            <div class="card-body"> 
+              I am from Grand Junction, Colorado, and I love the beautiful landscapes over on the Western Slope. I compete in powerlifting. Both my parents were also Computer Science Majors.
+              I am studying Computer Science because I think it will allow me to be a contributing member of society in a world that's becoming more and more digital everyday.
+            </div>
+          </div>
+        </div>
+        <!-- Header 2 -->
+        <div class="container p-2 my-2"> 
+          <h2> My Professional Profile </h2>
+          <img src="img/profilePic.jpg" alt="Picture of Samuel Adamson" height="700" width="500" style="border-radius:50%;"> 
+        </div>
+
+        <!-- Styling for horizontal list -->
+        <style type="text/css">
+          #hList ul {
+            list-style:none;
+            margin:0;
+            padding:0px;
+            display:inline-flex
+          }
+
+          #hList li{
+            padding:4px;
+          }
+        </style>
+
+        <!-- Header 3 Interests -->
+        <div class="container p-3 my-3 bg-light">
+          <div class="row">
+            <div class="col">
+              <h3> Interests </h3>
+            </div>
+            <div class="col">
+              <div class="float-right">
+                <a href="form.html" class="btn btn-outline-primary" role="button"> Add Interests </a>
+              </div>  
+            </div>
+          </div>
+
+          <!-- List -->
+          <div id="hList"> 
+            <ul>
+              <li>
+                <div class="card" style="width: 18rem; height: 22rem;"> 
+                  <img class="card-img-top" src="img/powerliftingIcon.jpg" alt="Powerlifting Clip Art">
+                  <div class="card-body">
+                    <h5 class="card-title"> Powerlifting </h5>
+                    <p class="card-text"> I like powerlifting because it helps me stay physically and mentally fit! </p>
+                  </div>  
+                </div>  
+              </li>
+              <li>
+                <div class="card" style="width: 18rem; height: 22rem;"> 
+                  <img class="card-img-top" src="img/programmingIcon.jpg" alt="Programming Clip Art">
+                  <div class="card-body">
+                    <h5 class="card-title"> Programming </h5>
+                    <p class="card-text"> I like programming because it challenges my mind and allows me to express myself! </p>
+                  </div>  
+                </div> 
+              </li>
+              <li>
+                <div class="card" style="width: 18rem; height: 22rem;"> 
+                  <img class="card-img-top" src="img/hikingIcon.jpg" alt="Hiking Clip Art">
+                  <div class="card-body">
+                    <h5 class="card-title"> Hiking </h5>
+                    <p class="card-text"> I like hiking because it provides an escape from everday life! </p>
+                  </div>  
+                </div> 
+              </li>
+            </ul>
+          </div>
+          <!-- End List -->
+        </div>
+
+        <!-- Footer -->
+        <footer style="height:50px; background-color:Gray; text-align:center; padding-top:4px;">
+          <div style="margin-top:4px">
+            <a href="https://www.linkedin.com/in/samuel-adamson-4397051b8/"> 
+              <img src="img/linkedInIcon.png" alt="Samuel's LinkedIn" height="39px" width="39px">
+            </a> 
+          </div>
+        </footer>
+      </body>
+    </html>
