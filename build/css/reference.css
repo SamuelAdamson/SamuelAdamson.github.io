@@ -1,0 +1,186 @@
+@charset "UTF-8";
+@import url("../../fonts/DoHyeon/Webfont.css");
+@import url("bootstrap-css/bootstrap.css");
+
+/* Font control */
+body#home {
+    font-family: 'Do Hyeon', Fallback, sans-serif;
+}
+
+
+/* Site wrapper */
+.site-wrapper {
+    position: relative;
+    background: #eee;
+    width: 100%;
+    height: 100%;
+    min-height: 810px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+section.content {
+    flex: 1;
+}
+
+@media (min-width:1200px) {
+    .site-wrapper {
+        -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .4);
+        box-shadow: 0 0 8px rgba(0, 0, 0, .4)
+    }
+}
+
+/* background video */
+.background-video {
+    z-index: 1;
+    width: 1440px;
+    height: auto;
+    filter: opacity(85%) brightness(80%);
+}
+
+.header-box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.stack-top{
+    z-index: 3;
+}
+
+/* Site header */
+ul#site-home { /* navbar, site home*/
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+ul#site-home:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=40);
+}
+
+ul#site-socials {
+    padding-right: 2rem;
+}
+
+/* Heading text */
+.h1-container {
+    color: #fff;
+    position: relative;
+    padding: none;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    min-height: 717px;
+}
+
+.h1-container h1 {
+    margin: 0;
+    padding: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+}
+
+/* Site content */
+.content-box {
+    margin: 0;
+    padding: 2rem;
+    height: 1100px;
+    width: 100%;
+    background: #eee;
+    position: absolute;
+    top: 100%;
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .4);
+    box-shadow: 0 0 8px rgba(0, 0, 0, .4);
+    z-index: 0;
+}
+
+/* Bottom text -- loaded on scroll */
+.custom-text {
+    margin-top: 3rem;
+    padding: 1rem;
+    background-color: #bebebe;
+    min-height: 30px;
+    color: #fff;
+}
+
+
+
+/* General */
+.row {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.row.row-top {
+    padding-top: 4rem;
+}
+
+.center-text {
+    text-align: center;
+}
+
+/*              EDITS TO BOOTSTRAP ELEMENTS              */
+/* ------------------------------------------------------*/
+
+.card.zoom {
+    cursor: pointer;
+    transition: transform 200ms ease;
+}
+
+.card.zoom img {
+    padding:0.5rem;
+    filter: opacity(75%);
+}
+
+.card.zoom:hover { /* Card zoom on hover */
+    -webkit-box-shadow: 0 0 12px rgba(0, 0, 0, .4);
+    box-shadow: 0 0 12px rgba(0, 0, 0, .4);
+    transform: scale(1.05);
+}
+
+
+/* Navbar z-order */
+.navbar.navbar-expand-sm {
+    z-index: 10;
+}
+
+/* nav-item, socials icons */
+.navbar-item.socials {
+    display: inline-block;
+}
+
+/* button with transparent background, hover - text changes to black, background to white */
+.btn.btn-transparent {
+  color: #fff;
+  border-color: transparent;
+}
+.btn.btn-transparent:hover {
+  color: #000;
+  background-color: #fff;
+  border-color: #fff;
+}
+.btn.btn-check:focus + .btn-transparent, .btn-transparent:focus {
+  box-shadow: 0 0 0 0.25rem rgba(248, 249, 250, 0.5);
+}
+.btn.btn-check:checked + .btn-transparent, .btn-check:active + .btn-transparent, .btn-transparent:active, .btn-transparent.active, .btn-transparent.dropdown-toggle.show {
+  color: #000;
+  background-color: #fff;
+  border-color: #fff;
+}
+.btn.btn-check:checked + .btn-transparent:focus, .btn-check:active + .btn-transparent:focus, .btn-transparent:active:focus, .btn-transparent.active:focus, .btn-transparent.dropdown-toggle.show:focus {
+  box-shadow: 0 0 0 0.25rem rgba(248, 249, 250, 0.5);
+}
+.btn.btn-transparent:disabled, .btn-transparent.disabled {
+  color: #fff;
+  background-color: transparent;
+  border-color: transparent;
+}

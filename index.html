@@ -1,126 +1,149 @@
-<!-- Samuel Adamson -->
+<!-- Samuel Adamson
+    PORTFOLIO WEBSITE - HOME
+-->
 <!DOCTYPE html>
-    <html lang="en">
-      <head>
+<html class="no-js">
+    <!--  metadata, stylesheets, favicon -->
+    <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <title> About Me </title>
-      </head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- IE8,9 compatible -->
+        <title> Home | Samuel Adamson </title> <!-- Landing Page -->
 
-      <body>
-        <!-- Navigation bar implementation -->
-        <nav class="navbar bg-dark navbar-dark navbar-expand-sm">
-          <ul class="navbar-nav">
-            <!-- Home -->
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html"> Home </a>
-            </li>
-            <!-- Projects -->
-            <li class="nav-item"> 
-              <a class="nav-link" href="projects.html"> Projects </a>  
-            </li>
-            <!-- Original Site -->
-            <li>
-              <a class="nav-link" href="mypage.html"> Original Site </a>
-            </li>   
-          </ul> 
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="navbar-brand" href="https://github.com/SamuelAdamson"> 
-                <img src="img/gitLogo.png" alt="Samuel's Github" height="36px" width="36px">
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <!-- Header 1 and Description -->
-        <div class="container bg-light p-3 my-3">
-          <h1> Adamson, Samuel </h1>
-          <div class="card"> 
-            <div class="card-body"> 
-              I am from Grand Junction, Colorado, and I love the beautiful landscapes over on the Western Slope. I compete in powerlifting. Both my parents were also Computer Science Majors.
-              I am studying Computer Science because I think it will allow me to be a contributing member of society in a world that's becoming more and more digital everyday.
+        <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0">
+        <meta name="apple-mobile-web-capable" content="yes"> <!-- Mobile compatible -->
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="build/css/reference.css">
+        <link rel="stylesheet" href="build/css/bootstrap-css/bootstrap.css"> <!-- Bootsrap v5.0.2 -->
+
+        <!-- JS -->
+        <script src="build/js/bootstrap-js/bootstrap.js"></script> <!-- Bootsrap v5.0.2 -->
+
+        <!-- Website Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="build/img/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="build/img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="build/img/favicon/favicon-16x16.png">
+        <link rel="mask-icon" href="build/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
+        <!-- OpenGraph Metadata -->
+        <meta property="og:title" content="Home | Samuel Adamson">
+        <meta property="og:type" content="article">
+        <meta property="og:site_name" content="Samuel Adamson">
+
+        <meta property="og:url" content="https://samueladamson.github.io">
+    </head>
+
+    <!-- Body -->
+    <body id="home">
+        <!-- Site Wrapper -->
+        <div class="site-wrapper">
+
+            <!-- Site navigation -->
+            <nav class="navbar navbar-expand-sm" id="site-navigation">
+                <ul class="navbar-nav" id="site-home">
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="build/img/socials/site-logo.png" alt="Home" height="61px" width="155px">
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Socials -->
+                <ul class="navbar-nav ms-auto" id="site-socials">
+                    <!-- Github -->
+                    <li class="nav-item socials">
+                        <a href="https://github.com/SamuelAdamson" class="btn btn-transparent btn-lg" role="button"> GitHub </a>
+                    </li>
+                    <!-- LinkedIn -->
+                    <li class="nav-item socials">
+                        <a href="https://www.linkedin.com/in/samuel-adamson-4397051b8/" class="btn btn-transparent btn-lg" role="button"> LinkedIn </a>
+                    </li>
+                </ul>
+            </nav> <!-- site-navigation -->
+
+            <!-- Top Layer -->
+            <div class="header-box stack-top">
+                <!-- Welcome Text -->
+                <div class="h1-container center-text">
+                    <h1> welcome. </h1>
+                </div>
             </div>
-          </div>
-        </div>
-        <!-- Header 2 -->
-        <div class="container p-2 my-2"> 
-          <h2> My Professional Profile </h2>
-          <img src="img/profilePic.jpg" alt="Picture of Samuel Adamson" height="700" width="500" style="border-radius:50%;"> 
-        </div>
-
-        <!-- Styling for horizontal list -->
-        <style type="text/css">
-          #hList ul {
-            list-style:none;
-            margin:0;
-            padding:0px;
-            display:inline-flex
-          }
-
-          #hList li{
-            padding:4px;
-          }
-        </style>
-
-        <!-- Header 3 Interests -->
-        <div class="container p-3 my-3 bg-light">
-          <div class="row">
-            <div class="col">
-              <h3> Interests </h3>
+            <!-- Bottom Layer -->
+            <div class="header-box">
+                <!-- Background video -->
+                <video autoplay muted loop class="background-video">
+                    <source src="videos/video.mp4" type="video/mp4">
+                </video>
             </div>
-            <div class="col">
-              <div class="float-right">
-                <a href="form.html" class="btn btn-outline-primary" role="button"> Add Interests </a>
-              </div>  
-            </div>
-          </div>
 
-          <!-- List -->
-          <div id="hList"> 
-            <ul>
-              <li>
-                <div class="card" style="width: 18rem; height: 22rem;"> 
-                  <img class="card-img-top" src="img/powerliftingIcon.jpg" alt="Powerlifting Clip Art">
-                  <div class="card-body">
-                    <h5 class="card-title"> Powerlifting </h5>
-                    <p class="card-text"> I like powerlifting because it helps me stay physically and mentally fit! </p>
-                  </div>  
-                </div>  
-              </li>
-              <li>
-                <div class="card" style="width: 18rem; height: 22rem;"> 
-                  <img class="card-img-top" src="img/programmingIcon.jpg" alt="Programming Clip Art">
-                  <div class="card-body">
-                    <h5 class="card-title"> Programming </h5>
-                    <p class="card-text"> I like programming because it challenges my mind and allows me to express myself! </p>
-                  </div>  
-                </div> 
-              </li>
-              <li>
-                <div class="card" style="width: 18rem; height: 22rem;"> 
-                  <img class="card-img-top" src="img/hikingIcon.jpg" alt="Hiking Clip Art">
-                  <div class="card-body">
-                    <h5 class="card-title"> Hiking </h5>
-                    <p class="card-text"> I like hiking because it provides an escape from everday life! </p>
-                  </div>  
-                </div> 
-              </li>
-            </ul>
-          </div>
-          <!-- End List -->
-        </div>
+            <!-- Lower content -->
+            <div class="content-box">
+                <!-- Row 1 -->
+                <div class="row row-top">
+                    <!-- BIO -->
+                    <div class="col-lg-4 d-flex align-items-stretch justify-content-center">
+                        <div class="card zoom">
+                            <img class="card-img-top" src="build/img/card-img/card-img-1.jpg" alt="N/A">
+                            <div class="card-body">
+                                <h2 class="card-title center-text"> coming soon. </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- EXPERIENCE -->
+                    <div class="col-lg-4 d-flex align-items-stretch justify-content-center">
+                        <div class="card zoom">
+                            <img class="card-img-top" src="build/img/card-img/card-img-2.jpg" alt="N/A">
+                            <div class="card-body">
+                                <h2 class="card-title center-text"> coming soon. </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- PROJECTS -->
+                    <div class="col-lg-4 d-flex align-items-stretch justify-content-center">
+                        <div class="card zoom">
+                            <img class="card-img-top" src="build/img/card-img/card-img-3.jpg" alt="N/A">
+                            <div class="card-body">
+                                <h2 class="card-title center-text"> coming soon. </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- Row 1 -->
 
-        <!-- Footer -->
-        <footer style="height:50px; background-color:Gray; text-align:center; padding-top:4px;">
-          <div style="margin-top:4px">
-            <a href="https://www.linkedin.com/in/samuel-adamson-4397051b8/"> 
-              <img src="img/linkedInIcon.png" alt="Samuel's LinkedIn" height="39px" width="39px">
-            </a> 
-          </div>
-        </footer>
-      </body>
-    </html>
+                <!-- Row 2 -->
+                <div class="row">
+                    <!-- FIVERR -->
+                    <div class="col-lg-4 d-flex align-items-stretch justify-content-center">
+                        <div class="card zoom">
+                            <img class="card-img-top" src="build/img/card-img/card-img-4.jpg" alt="N/A">
+                            <div class="card-body">
+                                <h2 class="card-title center-text"> coming soon. </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CRYPTO TRACKER -->
+                    <div class="col-lg-4 d-flex align-items-stretch justify-content-center">
+                        <div class="card zoom">
+                            <img class="card-img-top" src="build/img/card-img/card-img-5.jpg" alt="N/A">
+                            <div class="card-body">
+                                <h2 class="card-title center-text"> coming soon. </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- GAME -->
+                    <div class="col-lg-4 d-flex align-items-stretch justify-content-center">
+                        <div class="card zoom">
+                            <img class="card-img-top" src="build/img/card-img/card-img-6.jpg" alt="N/A">
+                            <div class="card-body">
+                                <h2 class="card-title center-text"> coming soon. </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- Row 2 -->
+            </div> <!-- Lower content -->
+
+        </div> <!-- site-wrapper -->
+    </body>
+
+</html>
