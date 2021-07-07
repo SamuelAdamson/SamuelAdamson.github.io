@@ -2,7 +2,7 @@
     PORTFOLIO WEBSITE - HOME
 -->
 <!DOCTYPE html>
-<html class="no-js">
+<html>
     <!--  metadata, stylesheets, favicon -->
     <head>
         <meta charset="utf-8">
@@ -39,9 +39,8 @@
     <body id="home">
         <!-- Site Wrapper -->
         <div class="site-wrapper">
-
-            <!-- Site navigation -->
-            <nav class="navbar navbar-expand-sm" id="site-navigation">
+            <!-- External link navigation -->
+            <nav class="navbar navbar-expand-sm">
                 <ul class="navbar-nav" id="site-home">
                     <li class="nav-item">
                         <a class="navbar-brand" href="index.html">
@@ -61,25 +60,25 @@
                         <a href="https://www.linkedin.com/in/samuel-adamson-4397051b8/" class="btn btn-transparent btn-lg" role="button"> LinkedIn </a>
                     </li>
                 </ul>
-            </nav> <!-- site-navigation -->
+            </nav> <!-- External link navigation -->
 
-            <!-- Top Layer -->
+            <!-- Bottom Layer Header Box -->
+            <div class="header-box stack-bottom">
+                <!-- Background video -->
+                <video autoplay muted loop class="background-video">
+                    <source src="build/videos/video.mp4" type="video/mp4">
+                </video>
+            </div>
+            <!-- Top Layer Header Box -->
             <div class="header-box stack-top">
                 <!-- Welcome Text -->
-                <div class="h1-container center-text">
+                <div class="welcome-text-box">
                     <h1> welcome. </h1>
                 </div>
             </div>
-            <!-- Bottom Layer -->
-            <div class="header-box">
-                <!-- Background video -->
-                <video autoplay muted loop class="background-video">
-                    <source src="videos/video.mp4" type="video/mp4">
-                </video>
-            </div>
 
-            <!-- Lower content -->
-            <div class="content-box">
+            <!-- Lower Content - Card Tab Navigation -->
+            <div class="card-box">
                 <!-- Row 1 -->
                 <div class="row row-top">
                     <!-- BIO -->
@@ -87,7 +86,8 @@
                         <div class="card zoom">
                             <img class="card-img-top" src="build/img/card-img/card-img-1.jpg" alt="N/A">
                             <div class="card-body">
-                                <h2 class="card-title center-text"> coming soon. </h2>
+                                <h2 class="card-title center-text"> bio. </h2>
+                                <a href="build/biography.html" class="stretched-link"></a>
                             </div>
                         </div>
                     </div>
@@ -96,7 +96,8 @@
                         <div class="card zoom">
                             <img class="card-img-top" src="build/img/card-img/card-img-2.jpg" alt="N/A">
                             <div class="card-body">
-                                <h2 class="card-title center-text"> coming soon. </h2>
+                                <h2 class="card-title center-text"> experience. </h2>
+                                <a href="build/experience.html" class="stretched-link"></a>
                             </div>
                         </div>
                     </div>
@@ -141,9 +142,35 @@
                         </div>
                     </div>
                 </div> <!-- Row 2 -->
-            </div> <!-- Lower content -->
+            </div> <!-- Lower Content -->
 
-        </div> <!-- site-wrapper -->
+            <!-- Site-Navigation -->
+            <footer class="site-navigation">
+                 <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center">
+                    <ul class="nav">
+                        <!-- HOME -->
+                        <li class="nav-item">
+                            <a href="index.html" class="btn btn-expand btn-lg" role="button"> home. </a>
+                        </li>
+                        <!-- BIO -->
+                        <li class="nav-item">
+                            <a href="build/biography.html" class="btn btn-expand btn-lg" role="button"> bio. </a>
+                        </li>
+                        <!-- EXPERIENCE -->
+                        <li class="nav-item">
+                            <a href="build/experience.html" class="btn btn-expand btn-lg" role="button"> experience. </a>
+                        </li>
+                        <!-- PROJECTS -->
+                        <li class="nav-item">
+                            <a href="index.html" class="btn btn-expand btn-lg" role="button"> projects. </a>
+                        </li>
+                        <!-- CONTACT -->
+                        <li class="nav-item">
+                            <a href="build/contact.html" class="btn btn-expand btn-lg" role="button"> contact. </a>
+                        </li>
+                    </ul>
+                </nav>
+            </footer>
+        </div> <!-- Site Wrapper -->
     </body>
-
 </html>
