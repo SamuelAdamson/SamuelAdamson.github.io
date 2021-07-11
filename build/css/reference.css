@@ -165,9 +165,54 @@ ul#site-socials { /* Social Links */
     color: #000;
 }
 
+
+/* Biography Page */
+.bio-box {
+    width: 100%;
+    height: 200px;
+    padding: 2rem;
+    -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .4);
+    box-shadow: 0 0 3px rgba(0, 0, 0, .4);
+}
+.bio-box.gray {
+    color: #fff;
+    background-color: #7e7e7e;
+    height: 300px;
+}
+.bio-box h2 {
+    font-size: 50px;
+    padding-bottom: 0.5rem;
+}
+.bio-box p {
+    font-size: 25px;
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.bio-section { /* Bio section to hold info */
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    padding: 2rem;
+}
+.bio-section h2 {
+    font-size: 30px;
+}
+.bio-section p {
+    font-size: 20px;
+}
+
+.bio-img { /* Sizing for images */
+    max-width: 288px !important;
+    text-align: center;
+}
+
 /* General */
 .center-text { /* Center Text */
     text-align: center;
+}
+.right-text { /* Justify Text Right */
+    text-align: right;
 }
 
 .row { /* Rows */
@@ -189,9 +234,26 @@ ul#site-socials { /* Social Links */
     height: 50px;
 }
 
+.load-on-scroll { /* loads on window scroll */
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+}
+.load-on-scroll.appear {
+    opacity: 1;
+}
 
 /*              EDITS TO BOOTSTRAP ELEMENTS              */
 /* ------------------------------------------------------*/
+.container.bio {
+    position: absolute;
+    top: 875px;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .card.zoom { /* Card elements */
     cursor: pointer;
     transition: transform 200ms ease;
