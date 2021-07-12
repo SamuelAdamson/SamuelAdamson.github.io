@@ -3,8 +3,8 @@
 // Fade in elements
 const faders = document.querySelectorAll('.load-on-scroll');
 const loadOptions = {
-    threshold: 1,
-    rootMargin: "0px 0px -20px 0px"
+    threshold: 0.7,
+    rowMargin: "0px 0px -100px 0px"
 };
 
 // Load elements on scroll
