@@ -33,8 +33,11 @@ body#experience {
 .site-wrapper.contact { /* Contact Page */
     min-height: 1000px;
 }
-.site-wrapper.bio { /* Contact Page */
+.site-wrapper.bio { /* Biography Page */
     min-height: 2300px;
+}
+.site-wrapper.experience { /* Experience Page */
+    min-height: 2700px;
 }
 
 
@@ -211,6 +214,22 @@ ul#site-socials { /* Social Links */
     text-align: center;
 }
 
+/* Experience Page */
+.exp-section {
+    width: 100%;
+    height: auto;
+    padding: 3rem;
+    border-top: solid;
+    border-bottom: solid;
+    margin-bottom: 5rem;
+}
+.exp-section h2 {
+    font-size: 50px;
+}
+.exp-section p {
+    font-size: 25px;
+}
+
 /* General */
 .center-text { /* Center Text */
     text-align: center;
@@ -245,7 +264,7 @@ ul#site-socials { /* Social Links */
 
 /*              EDITS TO BOOTSTRAP ELEMENTS              */
 /* ------------------------------------------------------*/
-.container.bio {
+.container.custom { /* Cotainer for biography/experience page */
     position: absolute;
     top: 875px;
     max-width: none;
@@ -254,6 +273,7 @@ ul#site-socials { /* Social Links */
     padding-left: 0;
     padding-right: 0;
 }
+
 
 .card.zoom { /* Card elements */
     cursor: pointer;
