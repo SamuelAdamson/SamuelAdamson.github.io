@@ -8,24 +8,25 @@ body#home,
 body#bio,
 body#contact,
 body#experience {
+    position: absolute;
     font-family: 'Do Hyeon', Fallback, sans-serif;
     margin: 0;
-    height: 100%;
+    height: auto;
+    width: 100%;
 }
 
 /* Site wrapper */
 .site-wrapper { /* Home, Bio */
-    position: absolute;
+    position: relative;
     top: 0;
     left: 50%;
     -ms-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
     background: #eee;
     width: 100%;
-    height: 100%;
+    height: auto;
     min-height: 1940px;
     max-width: 1440px;
-    margin: 0;
     -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .4);
     box-shadow: 0 0 8px rgba(0, 0, 0, .4);
     z-index: 0;
@@ -93,6 +94,7 @@ ul#site-socials { /* Social Links */
     filter: opacity(85%) brightness(80%);
 }
 .background-image {
+    width: 100%;
     max-width: 1440px;
     max-height: 810px;
     filter: opacity(85%) brightness(80%);
@@ -100,6 +102,7 @@ ul#site-socials { /* Social Links */
 .background-image.bio {
     max-height: 556px;
 }
+
 /* Welcome Text */
 .welcome-text-box {
     color: #fff;
