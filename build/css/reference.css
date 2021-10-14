@@ -7,7 +7,8 @@ html,
 body#home,
 body#bio,
 body#contact,
-body#experience {
+body#experience,
+body#projects {
     position: absolute;
     font-family: 'Do Hyeon', Fallback, sans-serif;
     margin: 0;
@@ -40,7 +41,9 @@ body#experience {
 .site-wrapper.experience { /* Experience Page */
     min-height: 2700px;
 }
-
+.site-wrapper.projects { /* Experience Page */
+    min-height: 2700px;
+}
 
 /* External links navigation */
 ul#site-home { /* navbar, site home*/
@@ -222,8 +225,6 @@ ul#site-socials { /* Social Links */
     width: 100%;
     height: auto;
     padding: 3rem;
-    border-top: solid;
-    border-bottom: solid;
     margin-bottom: 5rem;
 }
 .exp-section h2 {
@@ -264,6 +265,7 @@ ul#site-socials { /* Social Links */
 .load-on-scroll.appear {
     opacity: 1;
 }
+
 
 /*              EDITS TO BOOTSTRAP ELEMENTS              */
 /* ------------------------------------------------------*/
