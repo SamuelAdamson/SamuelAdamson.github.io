@@ -21,7 +21,7 @@
 }
 
 .SplashScreen .splash-head {
-    font-size: 6.5vw;
+    font-size: calc(4rem + 3vw);
     transform: translateY(3vh);
     color: #ffffff;
     opacity: 0;
