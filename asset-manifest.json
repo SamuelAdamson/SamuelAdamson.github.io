@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/SamuelAdamson.github.io/static/css/main.7705342c.chunk.css",
-    "main.js": "/SamuelAdamson.github.io/static/js/main.2210c2aa.chunk.js",
-    "main.js.map": "/SamuelAdamson.github.io/static/js/main.2210c2aa.chunk.js.map",
-    "runtime-main.js": "/SamuelAdamson.github.io/static/js/runtime-main.d281e393.js",
-    "runtime-main.js.map": "/SamuelAdamson.github.io/static/js/runtime-main.d281e393.js.map",
-    "static/js/2.8040fe5c.chunk.js": "/SamuelAdamson.github.io/static/js/2.8040fe5c.chunk.js",
-    "static/js/2.8040fe5c.chunk.js.map": "/SamuelAdamson.github.io/static/js/2.8040fe5c.chunk.js.map",
-    "index.html": "/SamuelAdamson.github.io/index.html",
-    "static/css/main.7705342c.chunk.css.map": "/SamuelAdamson.github.io/static/css/main.7705342c.chunk.css.map",
-    "static/js/2.8040fe5c.chunk.js.LICENSE.txt": "/SamuelAdamson.github.io/static/js/2.8040fe5c.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/SamuelAdamson.github.io/static/media/Poppins-Medium.9e1bb626.ttf"
+    "main.css": "/SamuelAdamson/SamuelAdamson.github.io.git/static/css/main.d10be75c.chunk.css",
+    "main.js": "/SamuelAdamson/SamuelAdamson.github.io.git/static/js/main.2210c2aa.chunk.js",
+    "main.js.map": "/SamuelAdamson/SamuelAdamson.github.io.git/static/js/main.2210c2aa.chunk.js.map",
+    "runtime-main.js": "/SamuelAdamson/SamuelAdamson.github.io.git/static/js/runtime-main.030330ef.js",
+    "runtime-main.js.map": "/SamuelAdamson/SamuelAdamson.github.io.git/static/js/runtime-main.030330ef.js.map",
+    "static/js/2.8040fe5c.chunk.js": "/SamuelAdamson/SamuelAdamson.github.io.git/static/js/2.8040fe5c.chunk.js",
+    "static/js/2.8040fe5c.chunk.js.map": "/SamuelAdamson/SamuelAdamson.github.io.git/static/js/2.8040fe5c.chunk.js.map",
+    "index.html": "/SamuelAdamson/SamuelAdamson.github.io.git/index.html",
+    "static/css/main.d10be75c.chunk.css.map": "/SamuelAdamson/SamuelAdamson.github.io.git/static/css/main.d10be75c.chunk.css.map",
+    "static/js/2.8040fe5c.chunk.js.LICENSE.txt": "/SamuelAdamson/SamuelAdamson.github.io.git/static/js/2.8040fe5c.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/SamuelAdamson/SamuelAdamson.github.io.git/static/media/Poppins-Medium.9e1bb626.ttf"
   },
   "entrypoints": [
-    "static/js/runtime-main.d281e393.js",
+    "static/js/runtime-main.030330ef.js",
     "static/js/2.8040fe5c.chunk.js",
-    "static/css/main.7705342c.chunk.css",
+    "static/css/main.d10be75c.chunk.css",
     "static/js/main.2210c2aa.chunk.js"
   ]
 }
