@@ -5,20 +5,62 @@
     text-align: center;
 }
 
+/* GENERAL ------------------------------------------------------------------------------------------------------------------- */
+a {
+    text-decoration: none;
+    color: #333333;
+}
+a:hover {
+    color: #333333;
+}
 
 /* NAVIGATION BAR ------------------------------------------------------------------------------------------------------------ */
 .nav-item {
     color: #333333;
     transition: ease 0.3s;
 }
-
+.right-nav-item {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 1vw;
+}
+.right-nav-item h3 {
+    font-size: calc(12px + 0.5vw);
+}
 .nav-item:hover {
     transform: scale(1.05);
-    filter: opacity(0.8);
 }
 .nav-item img {
-    height: calc(16px + 2.4vw);
-    width: calc(16px + 2.4vw);
+    height: calc(28px + 2vw);
+    width: calc(28px + 2vw);
+}
+
+.btn.btn-custom {
+    color: #333333;
+    border: solid 2px #ffffff;
+    text-align: center;
+}
+.btn.btn-custom:hover {
+    color: #ffffff;
+    background-color: #333333;
+    border-color: #333333;
+}
+.btn.btn-check:focus + .btn-custom, .btn-custom:focus {
+    box-shadow: 0 0 0 0.25rem rgba(248, 249, 250, 0.5);
+}
+
+.btn.btn-custom-social {
+    color: #333333;
+    border: solid 2px #333333;
+    text-align: center;
+}
+.btn.btn-custom-social:hover {
+    color: #ffffff;
+    background-color: #333333;
+}
+.btn.btn-check:focus + .btn-custom, .btn-custom:focus {
+    box-shadow: 0 0 0 0.25rem rgba(248, 249, 250, 0.5);
 }
 
 /* HOME PAGE ----------------------------------------------------------------------------------------------------------------- */
