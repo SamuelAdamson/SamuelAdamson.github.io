@@ -2,47 +2,62 @@
 /* Author: Samuel Adamson */
 
 .App { /* Auto-generated */
-  text-align: center;
+    text-align: center;
 }
 
-/* -- HOME PAGE -- */
+
+/* NAVIGATION BAR ------------------------------------------------------------------------------------------------------------ */
+.nav-item {
+    color: #333333;
+    transition: ease 0.3s;
+}
+
+.nav-item:hover {
+    transform: scale(1.05);
+    filter: opacity(0.8);
+}
+.nav-item img {
+    height: calc(16px + 2.4vw);
+    width: calc(16px + 2.4vw);
+}
+
+/* HOME PAGE ----------------------------------------------------------------------------------------------------------------- */
+/* Splash Screen */
 .SplashScreen {
     position: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 5;
+    top: 0;
     left: 0;
-    right: 0;
     width: 100vw;
     height: 100vh;
     background-color: #333333;
-    transition: ease 1.2s;
+    transition: all ease 1.3s;
 }
-
+.SplashScreen.fadeOut {
+    transform: translateY(-100vh);
+}
 .SplashScreen .splash-head {
-    font-size: calc(4rem + 3vw);
-    transform: translateY(3vh);
+    font-size: calc(40px + 5vw);
     color: #ffffff;
     opacity: 0;
 }
-
 .SplashScreen .splash-head:after {
     display: block;
-    height: 0.3vw;
+    height: 10px;
     width: 0;
     content: '';
     background: none repeat scroll 0 0 transparent;
     background-color: #fff;
     transition: ease 0.7s;
 }
-
 .SplashScreen .splash-head.active {
-    transform: none;
+    transform: translateY(-5vh);
     opacity: 1;
-    transition: ease 0.7s;
+    transition: ease 0.8s;
 }
-
 .SplashScreen .splash-head.active.underline:after {
     width: 100%;
 }

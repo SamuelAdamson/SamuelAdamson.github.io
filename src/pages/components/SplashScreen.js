@@ -11,6 +11,14 @@ class SplashScreen extends Component {
             splashClass: 'SplashScreen',
             headClass: 'splash-head'
         }
+
+        // Bind functions
+        this.unmountSplash = this.unmountSplash.bind(this);
+    }
+
+    // Unmount splash screen
+    unmountSplash() {
+        this.props.unmountMe();
     }
 
     // When Component Mounts
@@ -21,22 +29,37 @@ class SplashScreen extends Component {
         setTimeout(() => {
             this.setState({
                 headClass: 'splash-head active'
-            })
+            });
         }, time);
 
         // Underline Text
         setTimeout(() => {
             this.setState({
                 headClass: 'splash-head active underline'
-            })
+            });
         }, time += 1200);
 
         // Remove Underline
         setTimeout(() => {
             this.setState({
                 headClass: 'splash-head active'
-            })
+            });
         }, time += 1200);
+
+        // Fade Out Splash Screen
+        setTimeout(() => {
+            this.setState({
+                splashClass: 'SplashScreen fadeOut'
+            });
+
+            // Unmount component (Animation takes 1.2s)
+            setTimeout(() => {
+                this.unmountSplash();
+            }, 2000)
+
+        }, time += 1500);
+
+
     }
 
     render() {
