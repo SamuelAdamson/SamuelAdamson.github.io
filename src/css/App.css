@@ -32,8 +32,8 @@ a:hover {
     transform: scale(1.05);
 }
 .nav-item img {
-    height: calc(28px + 2vw);
-    width: calc(28px + 2vw);
+    height: calc(48px + 1vw);
+    width: calc(48px + 1vw);
 }
 
 .btn.btn-custom {
