@@ -41,7 +41,10 @@ class Home extends Component {
                 {this.state.renderSplash && firstInstance ? <SplashScreen unmountMe={ this.handleSplashUnmount } /> : null }
 
                 <Container>
-                    
+                    <div className="home-header">
+                        <h1> <strong> Samuel Adamson </strong> </h1>
+                        <h2> Data engineer, computer science student, weightlifter </h2>
+                    </div>
                 </Container>
             </div>
         );
