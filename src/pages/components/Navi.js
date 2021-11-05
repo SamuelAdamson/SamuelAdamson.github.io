@@ -13,18 +13,29 @@ class Navi extends Component {
 
         // States
         this.state = {
-            fullScreen: true
+            fullScreen: true,
+            showOffcanvas: false
         }
 
         // Binds
-        this.handleNotFullScreen = this.handleNotFullScreen.bind(this);
+        this.handleToggleOffcanvas = this.handleToggleOffcanvas.bind(this);
+        this.handleOffcanvasClose = this.handleOffcanvasClose.bind(this);
     }
 
-    // Toggle is available -- not full screen
-    handleNotFullScreen() {
+    // Toggle is available -- not full screen, and open offcanvas
+    handleToggleOffcanvas() {
         // Update State
         this.setState({
-            fullScreen: false
+            fullScreen: false,
+            showOffcanvas: true
+        })
+    }
+
+    // Off Canvas Close
+    handleOffcanvasClose() {
+        // Update State
+        this.setState({
+            showOffcanvas: false
         })
     }
 
@@ -39,7 +50,7 @@ class Navi extends Component {
                             </NavLink>
                         </div>
     
-                        <Navbar.Toggle onClick={ this.handleNotFullScreen } aria-controls="offcanvasNavbar" />
+                        <Navbar.Toggle onClick={ this.handleToggleOffcanvas } aria-controls="offcanvasNavbar" />
                         
                         {this.state.fullScreen ?  
                             <Navbar.Collapse className="justify-content-end"> 
@@ -63,26 +74,27 @@ class Navi extends Component {
                             </Navbar.Collapse>
                         : null }
 
-                        <Navbar.Offcanvas id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" placement="end">
-                            <Offcanvas.Header closeButton>
-                                <Offcanvas.Title id="offcanvasNavbarLabel"> navigate </Offcanvas.Title>
+                
+                        <Navbar.Offcanvas id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" placement="end" show={this.state.showOffcanvas}>
+                            <Offcanvas.Header>
+                                <Button className="btn-close" variant="none" onClick={ this.handleOffcanvasClose }></Button>
                             </Offcanvas.Header>
                             <Offcanvas.Body>
                                 <div className="nav-item">
                                     <NavLink exact to="/projects">
-                                        <Button variant="custom" size="lg"> 
-                                            <h5> projects </h5> 
+                                        <Button variant="custom" size="lg" onClick={ this.handleOffcanvasClose }> 
+                                            <h4> projects </h4> 
                                         </Button>
                                     </NavLink>
                                 </div>
                                 <div className="nav-item">
                                     <Button variant="custom" size="lg" href="https://github.com/SamuelAdamson" target="_blank" rel="noreferrer"> 
-                                        <h5> GitHub </h5> 
+                                        <h4> GitHub </h4> 
                                     </Button>
                                 </div>
                                 <div className="nav-item">
                                     <Button variant="custom" size="lg" href="https://www.linkedin.com/in/samuel-adamson-4397051b8/" target="_blank" rel="noreferrer"> 
-                                        <h5> LinkedIn </h5> 
+                                        <h4> LinkedIn </h4> 
                                     </Button>
                                 </div>
                             </Offcanvas.Body>
