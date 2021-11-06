@@ -1,19 +1,21 @@
 // DYNAMIC CONTAINER -- All pages
 // Author: Samuel Adamson
-import { Component } from 'react';
+// Intersection Observers
+import { useInView } from 'react-intersection-observer';
 
-class Dyno extends Component {
-    constructor() {
-        super();
-    }
+const Dyno = ({ thresh, props }) => {
+    // Intersection Observer
+    const { ref, inView } = useInView({
+        threshold: thresh
+    });
 
-    render() {
-        return (
-            <div className="Dyno">
-                <h1> Placeholder </h1>
+    return (
+        <div className="dyno-wrapper">
+            <div ref={ ref }  className={ inView ? 'Dyno in-view' : 'Dyno' }>
+                { props }        
             </div>
-        );
-    }
+        </div>
+    );
 }
 
 export default Dyno;

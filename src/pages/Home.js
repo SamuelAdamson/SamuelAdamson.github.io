@@ -4,6 +4,7 @@ import { Component } from 'react';
 import { Container } from 'react-bootstrap';
 // Components
 import SplashScreen from './components/SplashScreen';
+import Dyno from './components/Dyno';
 
 // First Instance of Home -- Render Splash Screen
 let firstInstance = true;
@@ -75,6 +76,9 @@ class Home extends Component {
                     </div>
                 </Container>
 
+                <Dyno thresh={ 0.6 }  props={  
+                    <h1> Some Text </h1>
+                }/>
 
             </div>
         );
