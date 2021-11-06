@@ -5,6 +5,7 @@
     text-align: center;
 }
 
+
 /* GENERAL ------------------------------------------------------------------------------------------------------------------- */
 a {
     text-decoration: none;
@@ -13,6 +14,7 @@ a {
 a:hover {
     color: #333333;
 }
+
 
 /* NAVIGATION BAR ------------------------------------------------------------------------------------------------------------ */
 .nav-item {
@@ -62,6 +64,15 @@ a:hover {
 .btn.btn-check:focus + .btn-custom, .btn-custom:focus {
     box-shadow: 0 0 0 0.25rem rgba(248, 249, 250, 0.5);
 }
+
+
+/* DYNAMIC CONTAINER --------------------------------------------------------------------------------------------------------- */
+.Dyno {
+    border-radius: 2rem;
+    background-color: #333333;
+}
+
+
 
 /* HOME PAGE ----------------------------------------------------------------------------------------------------------------- */
 /* Splash Screen */
@@ -115,10 +126,23 @@ a:hover {
     padding-right: 1vw;
 }
 .home-header h1 {
-    font-size: calc(70px + 5vw);
+    font-size: calc(30px + 7vw);
+    filter: opacity(0);
+    transform: translateY(2vh);
+    transition: ease 0.7s;
+}
+.home-header h1.show {
+    filter: opacity(1);
+    transform: none;
 }
 .home-header h2 {
     padding-top: 2px;
     font-size: calc(15px + 2vw);
+    filter: opacity(0);
+    transform: translateY(2vh);
+    transition: ease 0.8s;
+}
+.home-header h2.show {
     filter: opacity(0.8);
+    transform: none;
 }

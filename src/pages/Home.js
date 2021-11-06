@@ -14,15 +14,24 @@ class Home extends Component {
 
         // States
         this.state = { 
-            renderSplash: true
+            renderSplash: true,
+            headerOne: null,
+            headerTwo: null
         }
 
         // Bind functions
         this.handleSplashUnmount = this.handleSplashUnmount.bind(this);
+        this.handleHeadFadeIn = this.handleHeadFadeIn.bind(this);
+    }
+
+    // On mount
+    componentDidMount() {
+        this.handleHeadFadeIn();
     }
 
     // Increment number of home instances
     componentWillUnmount() {
+        // Update first instance
         firstInstance = false;
     }
 
@@ -31,6 +40,25 @@ class Home extends Component {
         this.setState({
             renderSplash: false
         });
+    }
+
+    // Fade in header
+    handleHeadFadeIn() {
+        // Fade in header 1
+        setTimeout(() => {
+            // Update state
+            this.setState({
+                headerOne: 'show' 
+            })
+        }, 5600)
+
+        // Fade in header 2
+        setTimeout(() => {
+            // Update state
+            this.setState({
+                headerTwo: 'show' 
+            })
+        }, 5800)
     }
 
     // Render components
@@ -42,10 +70,12 @@ class Home extends Component {
 
                 <Container>
                     <div className="home-header">
-                        <h1> <strong> Samuel Adamson </strong> </h1>
-                        <h2> Data engineer, computer science student, weightlifter </h2>
+                        <h1 className={this.state.headerOne}> <strong> Samuel Adamson </strong> </h1>
+                        <h2 className={this.state.headerTwo}> Data engineer, computer science student, weightlifter </h2>
                     </div>
                 </Container>
+
+
             </div>
         );
     }
