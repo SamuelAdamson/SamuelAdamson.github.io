@@ -147,11 +147,18 @@ class Home extends Component {
                     </Container>
                 }/>
 
-                <DynoFull thresh={ 0.1 }  props= {
-                    <Container>
-                        <h1> Some more text </h1>
-                    </Container>
-                }/>
+                <DynoFull thresh={ 0.2 }  
+                    initialProp={
+                        <Container className="lower-content-head"> 
+                            <h1> Coming Soon </h1>
+                        </Container>
+                    }
+                    props={
+                        <Container className="lower-content-body">
+                            
+                        </Container>
+                    }
+                />
 
             </div>
         );

@@ -97,7 +97,7 @@ a:hover {
 
 /* FADE IN ON SCROLL --------------------------------------------------------------------------------------------------------- */
 .ScrollFade {
-    transform: translateY(-8vh);
+    transform: translateY(10vh);
     filter: opacity(0);
     transition: all ease 1s;
 }
@@ -147,7 +147,15 @@ a:hover {
 .Dyno .dyno-content.show {
     filter: opacity(1);
     transform: scale(1.075);
+}
+.DynoFull .dyno-content-full {
+    filter: opacity(0);
+    transform: translateY(10vh);
     transition: all ease 1s;
+}
+.DynoFull .dyno-content-full.show {
+    filter: opacity(1);
+    transform: translateY(0);
 }
 
 /* HOME PAGE ----------------------------------------------------------------------------------------------------------------- */
