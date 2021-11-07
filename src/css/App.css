@@ -17,7 +17,7 @@ a:hover {
 
 
 /* NAVIGATION BAR ------------------------------------------------------------------------------------------------------------ */
-.nav-item {
+.nav-item { /* Navigation Items */
     color: #333333;
     transition: ease 0.3s;
 }
@@ -36,6 +36,21 @@ a:hover {
 .nav-item img {
     height: calc(48px + 1vw);
     width: calc(48px + 1vw);
+}
+
+.nav-item-offc { /* Navigation Item - Off Canvas */
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+}
+.nav-item-offc:hover {
+    transform: scale(1.05);
+}
+.offc-sep { /* Separator element */
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    width: 100%;
+    height: 3px;
+    background-color: #333333;
 }
 
 .btn.btn-custom {
@@ -62,6 +77,20 @@ a:hover {
     background-color: #333333;
 }
 .btn.btn-check:focus + .btn-custom, .btn-custom:focus {
+    box-shadow: 0 0 0 0.25rem rgba(248, 249, 250, 0.5);
+}
+
+.btn.btn-custom-offc { /* Off Canvas Button */
+    color: #333333;
+    border: solid 2px #eeeeee;
+    text-align: center;
+}
+.btn.btn-custom-offc:hover {
+    color: #ffffff;
+    background-color: #333333;
+    border-color: #333333;
+}
+.btn.btn-check:focus + .btn-custom-offc, .btn-custom-ofc:focus {
     box-shadow: 0 0 0 0.25rem rgba(248, 249, 250, 0.5);
 }
 

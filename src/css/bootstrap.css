@@ -6044,6 +6044,7 @@ textarea.form-control-lg {
 }
 
 .offcanvas-body {
+  justify-content: center;
   flex-grow: 1;
   padding: 1rem 1rem;
   overflow-y: auto;
@@ -6060,7 +6061,8 @@ textarea.form-control-lg {
 .offcanvas-end {
   top: 0;
   right: 0;
-  width: 400px;
+  width: 50vw; /* EDITED */
+  background-color: #eeeeee;
   border-left: 1px solid rgba(0, 0, 0, 0.2);
   transform: translateX(100%);
 }

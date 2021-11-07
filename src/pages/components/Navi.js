@@ -80,23 +80,26 @@ class Navi extends Component {
                                 <Button className="btn-close" variant="none" onClick={ this.handleOffcanvasClose }></Button>
                             </Offcanvas.Header>
                             <Offcanvas.Body>
-                                <div className="nav-item">
+                                <div className="nav-item-offc">
                                     <NavLink exact to="/projects">
-                                        <Button variant="custom" size="lg" onClick={ this.handleOffcanvasClose }> 
+                                        <Button variant="custom-offc" size="lg" onClick={ this.handleOffcanvasClose }> 
                                             <h4> projects </h4> 
                                         </Button>
                                     </NavLink>
                                 </div>
-                                <div className="nav-item">
-                                    <Button variant="custom" size="lg" href="https://github.com/SamuelAdamson" target="_blank" rel="noreferrer"> 
+                                <div className="offc-sep"/>
+                                <div className="nav-item-offc">
+                                    <Button variant="custom-offc" size="lg" href="https://github.com/SamuelAdamson" target="_blank" rel="noreferrer"> 
                                         <h4> GitHub </h4> 
                                     </Button>
                                 </div>
-                                <div className="nav-item">
-                                    <Button variant="custom" size="lg" href="https://www.linkedin.com/in/samuel-adamson-4397051b8/" target="_blank" rel="noreferrer"> 
+                                <div className="offc-sep"/>
+                                <div className="nav-item-offc">
+                                    <Button variant="custom-offc" size="lg" href="https://www.linkedin.com/in/samuel-adamson-4397051b8/" target="_blank" rel="noreferrer"> 
                                         <h4> LinkedIn </h4> 
                                     </Button>
                                 </div>
+                                <div className="offc-sep"/>
                             </Offcanvas.Body>
                         </Navbar.Offcanvas>
 
