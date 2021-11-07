@@ -12,7 +12,9 @@ const Dyno = ({ thresh, props }) => {
     return (
         <div className="dyno-wrapper">
             <div ref={ ref }  className={ inView ? 'Dyno in-view' : 'Dyno' }>
-                { props }        
+                <div className={ inView ? 'dyno-content show' : 'dyno-content' }>
+                    { props }
+                </div>
             </div>
         </div>
     );

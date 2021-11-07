@@ -1,10 +1,12 @@
 // HOME PAGE -- Portfolio
 // Author: Samuel Adamson
 import { Component } from 'react';
-import { Container } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 // Components
 import SplashScreen from './components/SplashScreen';
 import Dyno from './components/Dyno';
+// Images
+import Profile from '../img/profile.jpg';
 
 // First Instance of Home -- Render Splash Screen
 let firstInstance = true;
@@ -27,7 +29,15 @@ class Home extends Component {
 
     // On mount
     componentDidMount() {
-        this.handleHeadFadeIn();
+        // Fade in on yeeta skeeta
+        if(firstInstance) {
+            this.handleHeadFadeIn();
+        } else {
+            this.setState({
+                headerOne: 'show',
+                headerTwo: 'show'
+            })
+        }
     }
 
     // Increment number of home instances
@@ -76,10 +86,55 @@ class Home extends Component {
                     </div>
                 </Container>
 
-                <Dyno thresh={ 0.6 }  props={  
-                    <h1> Some Text </h1>
-                }/>
+                <Dyno thresh={ 0.6 }  props={
+                    <Container>
+                        <Row className="profile-row">
+                            <Col>
+                                <h2> Data Engineering </h2>
+                                <br />
+                                <h4>  
+                                    I build automated systems to manage
+                                    and analyze large amounts of protected data.
+                                </h4>
+                            </Col>
+                            <Col>
+                                <h2> AI </h2>
+                                <br />
+                                <h4>
+                                    I am majoring in computer science with a focus
+                                    in artificial intelligence.
+                                </h4>
+                            </Col>
+                            <Col>
+                                <h2> Web Development </h2>
+                                <br />
+                                <h4>
+                                    I am a full stack hobbyist, and you're looking at
+                                    one of my creations right now.
+                                </h4>
+                            </Col>
+                        </Row>
 
+                        <Row className="profile-row">
+                            <Col>
+                                <h2> From Rural Roots </h2>
+                                <br />
+                                <h4> 
+                                    Growing up on the Western Slope of Colorado, I developed a passion
+                                    for Computing. I began writing object oriented code at the age 
+                                    of 14 and two years later I started my first internship as a 
+                                    Junior Game Developer. After high school, I entered the University 
+                                    of Colorado as a computer science major. Alongside my studies, I work 
+                                    as a data engineer in the healthcare industry.
+                                </h4>
+                            </Col>
+                            <Col>
+                                <div className="profile-bar"/>
+                                <img src={ Profile } alt="Samuel" className="profile-img" />
+                            </Col>
+                        </Row>
+                    </Container>
+                }/>
             </div>
         );
     }

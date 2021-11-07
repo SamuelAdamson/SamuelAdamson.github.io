@@ -75,10 +75,12 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     border-radius: 2rem;
     background-color: #333333;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    color: #ffffff;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     width: 100%;
     transition: all ease 1s;
 
@@ -90,14 +92,17 @@ a:hover {
 }
 .Dyno.in-view {
     margin: 0;
-    padding-left: calc((101.5vw - 1320px) / 2);
-    padding-right: calc((101.5vw - 1320px) / 2);
 }
-.Dyno h1 {
-    margin-top: 30vh;
-    margin-bottom: 30vh;
+.Dyno .dyno-content {
+    filter: opacity(0);
+    transform: scale(0.95);
+    transition: all ease 1s;
 }
-
+.Dyno .dyno-content.show {
+    filter: opacity(1);
+    transform: scale(1.075);
+    transition: all ease 1s;
+}
 
 /* HOME PAGE ----------------------------------------------------------------------------------------------------------------- */
 /* Splash Screen */
@@ -170,4 +175,33 @@ a:hover {
 .home-header h2.show {
     filter: opacity(0.8);
     transform: none;
+}
+
+.profile-img { /* Profile Pic */
+    width: calc(400px + 8vw);
+    height: auto;
+    border-radius: 1rem;
+    filter: opacity(0.7);
+}
+.profile-row {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: left;
+}
+.profile-row h2:after {
+    display: block;
+    height: 4px;
+    width: 100%;
+    content: '';
+    background: none repeat scroll 0 0 transparent;
+    background-color: #ffffff;
+}
+.profile-row h4 {
+    filter: opacity(0.8);
+}
+.profile-row .col {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
