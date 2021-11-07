@@ -97,7 +97,7 @@ a:hover {
 
 /* FADE IN ON SCROLL --------------------------------------------------------------------------------------------------------- */
 .ScrollFade {
-    transform: translateY(5vh);
+    transform: translateY(-8vh);
     filter: opacity(0);
     transition: all ease 1s;
 }
@@ -130,6 +130,11 @@ a:hover {
     padding-right: 0.75rem;
     margin-left: calc((100vw - 1320px) / 2);
     margin-right: calc((100vw - 1320px) / 2);
+}
+.DynoFull {
+    border-bottom-left-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+    padding-bottom: 100vh;
 }
 .Dyno.in-view {
     margin: 0;

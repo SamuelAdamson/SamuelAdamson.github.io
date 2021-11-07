@@ -6,7 +6,7 @@ import { useInView } from 'react-intersection-observer';
 const Dyno = ({ thresh, props }) => {
     // If view width is less than < 720 make thresh 1/4 
     if(window.innerWidth < 720) {
-        thresh /= 4;
+        thresh /= 2.5;
     }
 
     // Intersection Observer

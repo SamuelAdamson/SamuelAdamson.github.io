@@ -5,6 +5,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 // Components
 import SplashScreen from './components/SplashScreen';
 import Dyno from './components/Dyno';
+import DynoFull from './components/DynoFull';
 import ScrollFade from './components/ScrollFade';
 // Images
 import Profile from '../img/profile.jpg';
@@ -143,6 +144,12 @@ class Home extends Component {
                         <h2> 
                             Life is all about perspective. See my ventures in tech and beyond, so far
                         </h2>
+                    </Container>
+                }/>
+
+                <DynoFull thresh={ 0.1 }  props= {
+                    <Container>
+                        <h1> Some more text </h1>
                     </Container>
                 }/>
 
