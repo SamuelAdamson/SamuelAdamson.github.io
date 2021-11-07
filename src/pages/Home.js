@@ -5,6 +5,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 // Components
 import SplashScreen from './components/SplashScreen';
 import Dyno from './components/Dyno';
+import ScrollFade from './components/ScrollFade';
 // Images
 import Profile from '../img/profile.jpg';
 
@@ -135,6 +136,16 @@ class Home extends Component {
                         </Row>
                     </Container>
                 }/>
+
+                <ScrollFade props={
+                    <Container className="mid-header">
+                        <h1> <strong> From my perspective </strong> </h1>
+                        <h2> 
+                            Life is all about perspective. See my ventures in tech and beyond, so far
+                        </h2>
+                    </Container>
+                }/>
+
             </div>
         );
     }
