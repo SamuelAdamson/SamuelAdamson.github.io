@@ -70,6 +70,7 @@ a:hover {
 .dyno-wrapper {
     display: flex;
     justify-content: center;
+    margin-bottom: 100vh;
 }
 .Dyno {
     display: flex;
@@ -79,8 +80,8 @@ a:hover {
     border-radius: 2rem;
     background-color: #333333;
     color: #ffffff;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     width: 100%;
     transition: all ease 1s;
 
@@ -151,12 +152,12 @@ a:hover {
 }
 .home-header {
     padding-top: 15vh;
-    padding-bottom: 20vh;
+    padding-bottom: 15vh;
     padding-left: 1vw;
     padding-right: 1vw;
 }
 .home-header h1 {
-    font-size: calc(30px + 7vw);
+    font-size: calc(2rem + 7.5vw);
     filter: opacity(0);
     transform: translateY(2vh);
     transition: ease 0.7s;
@@ -167,7 +168,7 @@ a:hover {
 }
 .home-header h2 {
     padding-top: 2px;
-    font-size: calc(15px + 2vw);
+    font-size: calc(0.75rem + 2vw);
     filter: opacity(0);
     transform: translateY(2vh);
     transition: ease 0.8s;
@@ -178,7 +179,7 @@ a:hover {
 }
 
 .profile-img { /* Profile Pic */
-    width: calc(400px + 8vw);
+    width: calc(280px + 13vw);
     height: auto;
     border-radius: 1rem;
     filter: opacity(0.7);
@@ -191,7 +192,7 @@ a:hover {
 .profile-row h2:after {
     display: block;
     height: 4px;
-    width: 100%;
+    width: 95%;
     content: '';
     background: none repeat scroll 0 0 transparent;
     background-color: #ffffff;
@@ -200,8 +201,8 @@ a:hover {
     filter: opacity(0.8);
 }
 .profile-row .col {
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: calc(0.5rem + 2vw);
+    margin-right: calc(0.5rem + 2vw);
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
