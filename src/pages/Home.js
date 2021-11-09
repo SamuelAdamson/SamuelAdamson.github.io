@@ -2,6 +2,7 @@
 // Author: Samuel Adamson
 import { Component } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 // Components
 import SplashScreen from './components/SplashScreen';
 import Dyno from './components/Dyno';
@@ -9,7 +10,11 @@ import DynoFull from './components/DynoFull';
 import Reveal from 'react-reveal/Reveal';
 import Footer from './components/Footer';
 // Images
-import Profile from '../img/profile.jpg';
+import Profile from '../img/home/profile.jpg';
+import CU from '../img/home/cu.jpg';
+import Monument from '../img/home/monument.jpg';
+import Server from '../img/home/server.jpg';
+import Lift from '../img/home/lift.jpg';
 
 // First Instance of Home -- Render Splash Screen
 let firstInstance = true;
@@ -151,10 +156,10 @@ class Home extends Component {
                     initialProp={
                         <Container className="lower-content-head"> 
                             <Row className="profile-row lower">
-                                <Col sm={8}>
+                                <Col>
                                     <h1> Purpose </h1>
                                     <br />
-                                    <h3> 
+                                    <h4> 
                                         In this modern age of information and technology, computing will continue to 
                                         play a massive role in shaping our society. 
                                         <br />
@@ -162,9 +167,9 @@ class Home extends Component {
                                         I want to help harness the computational power we have at our disposal
                                         to improve lives and push our civilization forward. As I continue to write
                                         my story, I do so with this intention in mind.
-                                    </h3>
+                                    </h4>
                                 </Col>
-                                <Col sm={4} />
+                                <Col sm={3} />
                             </Row>
                             <br />
                         </Container>
@@ -172,55 +177,76 @@ class Home extends Component {
                     props={[
                         <Container className="lower-content-body">
                             <Row className="profile-row lower">
-                                <Col>
-                                
-                                </Col>
-                                <Col>
+                                <Col className="my-auto">
                                     <h2> Education </h2>
                                     <br />
                                     <h4> 
-                                        After graduating saludatorian from Grand Junction High School,
-                                        I began my undergraduate studies at the University of Colorado Boulder.
-                                        Two years in, I transferred to the University of Colorado 
-                                        Colorado Springs.  
+                                        After graduating salutatorian from Grand Junction High School in 2019,
+                                        I began my undergraduate studies at the University of Colorado. During
+                                        my junior year I declared a focus in Artificial Intelligence.
+                                        Throughout my educational career, I maintain a 4.0 GPA.
                                     </h4>
+                                </Col>
+                                <Col>
+                                    <img src={ CU } alt="Univ of Colorado" className="profile-img" />
+                                </Col>
+                            </Row>
+                        </Container>,
+                        <Container className="lower-content-body">
+                            <Row className="profile-row lower">
+                                <Col className="my-auto">
+                                    <h2> Professional Work </h2>
+                                    <br />
+                                    <h4> 
+                                        Currently I work at a clinically integrated healthcare network, Monument 
+                                        Health. As a data engineer, I build Extract Transfer Load Pipelines
+                                        which automate the flow of data into Cloud Based warehouses. I also contribute
+                                        to analysis and database infrastructure. 
+                                    </h4>
+                                    <br />
+                                    <NavLink exact to="/projects">
+                                        <h4 className="lower-button"> see my projects </h4>
+                                    </NavLink>
+                                </Col>
+                                <Col>
+                                    <img src={ Monument } alt="Monument Health" className="profile-img" />
                                 </Col>
                             </Row>
                         </Container>,
                         <Container className="lower-content-body">
                             <Row className="profile-row lower">
                                 <Col>
-                                    <h2> Education </h2>
+                                    <h2> Past Experience </h2>
                                     <br />
                                     <h4> 
-                                        After graduating saludatorian from Grand Junction High School,
-                                        I began my undergraduate studies at the University of Colorado Boulder.
-                                        Two years in, I transferred to the University of Colorado 
-                                        Colorado Springs.  
+                                        Previously I worked as an IT Technician for a network management
+                                        contractor, Grand Mesa Software. where I developed technical know how and problem solving
+                                        skills. Following my third year of high school I worked in game development
+                                        at Synaptix Games.
                                     </h4>
                                 </Col>
                                 <Col>
-                                
+                                    <img src={ Server } alt="Work Experience" className="profile-img" />
                                 </Col>
                             </Row>
                         </Container>,
                         <Container className="lower-content-body">
-                            <Row className="profile-row lower">
-                                <Col>
-                                
-                                </Col>
-                                <Col>
-                                    <h2> Education </h2>
-                                    <br />
-                                    <h4> 
-                                        After graduating saludatorian from Grand Junction High School,
-                                        I began my undergraduate studies at the University of Colorado Boulder.
-                                        Two years in, I transferred to the University of Colorado 
-                                        Colorado Springs.  
-                                    </h4>
-                                </Col>
-                            </Row>
-                        </Container>
+                        <Row className="profile-row lower">
+                            <Col>
+                                <h2> AFK </h2>
+                                <br />
+                                <h4> 
+                                    When I'm away from the keyboard (AFK), you can find me in the gym.
+                                    For a year and a half I practiced powerlifting before transitioning 
+                                    to competitive weightlifitng. In the spirit of sharing my passion for lifting, 
+                                    I operate as an ISSA certified personal trainer.
+                                </h4>
+                            </Col>
+                            <Col>
+                                <img src={ Lift } alt="Work Experience" className="profile-img" />
+                            </Col>
+                        </Row>
+                    </Container>
                 ]}
                 foot={
                     <Footer />

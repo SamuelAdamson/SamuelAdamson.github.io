@@ -94,6 +94,23 @@ a:hover {
     box-shadow: 0 0 0 0.25rem rgba(248, 249, 250, 0.5);
 }
 
+.lower-button {
+    color: #bbbbbb;
+    filter: opacity(0.8);
+    width: fit-content;
+}
+.lower-button:after {
+    display: block;
+    height: 4px;
+    width: 0;
+    content: '';
+    background: none repeat scroll 0 0 transparent;
+    background-color: #ffffff;
+    transition: ease 0.4s;
+}
+.lower-button:hover:after {
+    width: 100%;
+}
 
 /* FADE IN ON SCROLL --------------------------------------------------------------------------------------------------------- */
 @keyframes fadeOnScroll {
@@ -165,16 +182,13 @@ a:hover {
 
 /* FOOTER -------------------------------------------------------------------------------------------------------------------- */
 .Footer {
-    margin-top: 5vh;
-    background-color: #333333;
     color: #ffffff;
     text-align: center;
-}
-.Footer .row {
-    margin-bottom: 1rem;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
 }
 .Footer .list-group {
-    margin-bottom: 1.5rem;
+    background-color: #333333;
 }
 .Footer .list-group-item {
     margin-left: 0.75rem;
@@ -306,21 +320,10 @@ a:hover {
     padding-bottom: 2rem;
     text-align: left;
 }
-.profile-row .lower {
-    margin-bottom: 6vh;
-}
-.profile-row.lower h1:after {
-    display: block;
-    height: 6px;
-    width: 100%;
-    content: '';
-    background: none repeat scroll 0 0 transparent;
-    background-color: #ffffff;
-}
 .profile-row h2:after {
     display: block;
     height: 4px;
-    width: 95%;
+    width: 100%;
     content: '';
     background: none repeat scroll 0 0 transparent;
     background-color: #ffffff;
@@ -331,7 +334,18 @@ a:hover {
 .profile-row .col {
     margin-left: calc(0.5rem + 2vw);
     margin-right: calc(0.5rem + 2vw);
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
+.profile-row.lower {
+    margin-bottom: 4vh;
+}
+.profile-row.lower h1:after {
+    display: block;
+    height: 6px;
+    width: 100%;
+    content: '';
+    background: none repeat scroll 0 0 transparent;
+    background-color: #ffffff;
+}
