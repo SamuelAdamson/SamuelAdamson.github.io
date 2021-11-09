@@ -6,7 +6,8 @@ import { Container, Row, Col } from 'react-bootstrap';
 import SplashScreen from './components/SplashScreen';
 import Dyno from './components/Dyno';
 import DynoFull from './components/DynoFull';
-import ScrollFade from './components/ScrollFade';
+import Reveal from 'react-reveal/Reveal';
+import Footer from './components/Footer';
 // Images
 import Profile from '../img/profile.jpg';
 
@@ -84,7 +85,7 @@ class Home extends Component {
                 <Container>
                     <div className="home-header">
                         <h1 className={this.state.headerOne}> <strong> Samuel Adamson </strong> </h1>
-                        <h2 className={this.state.headerTwo}> Data engineer, computer science student, weightlifter </h2>
+                        <h2 className={this.state.headerTwo}> data engineer, computer science student, weightlifter </h2>
                     </div>
                 </Container>
 
@@ -123,7 +124,7 @@ class Home extends Component {
                                 <br />
                                 <h4> 
                                     Growing up on the Western Slope of Colorado, I developed a passion
-                                    for Computing. I began writing object oriented code at the age 
+                                    for computing. I began writing object oriented code at the age 
                                     of 14 and two years later I started my first internship as a 
                                     Junior Game Developer. After high school, I entered the University 
                                     of Colorado as a computer science major. Alongside my studies, I work 
@@ -131,35 +132,99 @@ class Home extends Component {
                                 </h4>
                             </Col>
                             <Col>
-                                <div className="profile-bar"/>
                                 <img src={ Profile } alt="Samuel" className="profile-img" />
                             </Col>
                         </Row>
                     </Container>
                 }/>
 
-                <ScrollFade props={
+                <Reveal effect="fadeOnScroll">
                     <Container className="mid-header">
-                        <h1> <strong> From my perspective </strong> </h1>
+                        <h1> <strong> My perspective </strong> </h1>
                         <h2> 
-                            Life is all about perspective. See my ventures in tech and beyond, so far
+                            everyone lives within their own subjective interpretation - itachi uchiha
                         </h2>
                     </Container>
-                }/>
+                </Reveal>
 
                 <DynoFull thresh={ 0.2 }  
                     initialProp={
                         <Container className="lower-content-head"> 
-                            <h1> Coming Soon </h1>
+                            <Row className="profile-row lower">
+                                <Col sm={8}>
+                                    <h1> Purpose </h1>
+                                    <br />
+                                    <h3> 
+                                        In this modern age of information and technology, computing will continue to 
+                                        play a massive role in shaping our society. 
+                                        <br />
+                                        <br />
+                                        I want to help harness the computational power we have at our disposal
+                                        to improve lives and push our civilization forward. As I continue to write
+                                        my story, I do so with this intention in mind.
+                                    </h3>
+                                </Col>
+                                <Col sm={4} />
+                            </Row>
+                            <br />
                         </Container>
                     }
-                    props={
+                    props={[
                         <Container className="lower-content-body">
-                            
+                            <Row className="profile-row lower">
+                                <Col>
+                                
+                                </Col>
+                                <Col>
+                                    <h2> Education </h2>
+                                    <br />
+                                    <h4> 
+                                        After graduating saludatorian from Grand Junction High School,
+                                        I began my undergraduate studies at the University of Colorado Boulder.
+                                        Two years in, I transferred to the University of Colorado 
+                                        Colorado Springs.  
+                                    </h4>
+                                </Col>
+                            </Row>
+                        </Container>,
+                        <Container className="lower-content-body">
+                            <Row className="profile-row lower">
+                                <Col>
+                                    <h2> Education </h2>
+                                    <br />
+                                    <h4> 
+                                        After graduating saludatorian from Grand Junction High School,
+                                        I began my undergraduate studies at the University of Colorado Boulder.
+                                        Two years in, I transferred to the University of Colorado 
+                                        Colorado Springs.  
+                                    </h4>
+                                </Col>
+                                <Col>
+                                
+                                </Col>
+                            </Row>
+                        </Container>,
+                        <Container className="lower-content-body">
+                            <Row className="profile-row lower">
+                                <Col>
+                                
+                                </Col>
+                                <Col>
+                                    <h2> Education </h2>
+                                    <br />
+                                    <h4> 
+                                        After graduating saludatorian from Grand Junction High School,
+                                        I began my undergraduate studies at the University of Colorado Boulder.
+                                        Two years in, I transferred to the University of Colorado 
+                                        Colorado Springs.  
+                                    </h4>
+                                </Col>
+                            </Row>
                         </Container>
-                    }
-                />
-
+                ]}
+                foot={
+                    <Footer />
+                }/>
             </div>
         );
     }

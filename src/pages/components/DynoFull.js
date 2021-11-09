@@ -3,9 +3,10 @@
 // Intersection Observers
 import { useInView } from 'react-intersection-observer';
 // Components
-import ScrollFade from './ScrollFade';
+import Reveal from 'react-reveal/Reveal';
 
-const DynoFull = ({ thresh, initialProp, props }) => {
+
+const DynoFull = ({ thresh, initialProp, props, foot }) => {
     // If view width is less than < 720 make thresh 0 
     if(window.innerWidth < 720) {
         thresh = 0;
@@ -21,7 +22,12 @@ const DynoFull = ({ thresh, initialProp, props }) => {
             <div ref={ ref }  className={ inView ? 'Dyno DynoFull in-view' : 'Dyno DynoFull' }>
                 <div className={ inView ? 'dyno-content-full show' : 'dyno-content-full' } >
                     { initialProp }
-                    <ScrollFade props={ props } />
+                    {props.map((elem, index) => (
+                        <Reveal key={index} effect="fadeOnScroll"> 
+                            { elem } 
+                        </Reveal>
+                    ))}
+                    { foot }
                 </div>
             </div>
         </div>
