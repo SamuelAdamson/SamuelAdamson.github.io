@@ -29,6 +29,64 @@ const Footer = () => {
                     </ListGroup.Item>
                 </ListGroup>
             </Row>
+
+            <Row>
+                <Col>
+                    <Row> <h2> Contact </h2> </Row>
+                    <Row>
+                        <a href="mailto:sadamson@uccs.edu">
+                            <h3> Email </h3>
+                        </a>
+                    </Row>
+                    <Row>
+                        <a href="https://www.fiverr.com/giibbi">
+                            <h3> Fiverr </h3>
+                        </a>
+                    </Row>
+                    <Row>
+                        <a href="https://SamuelAdamson.github.io/#/projects" target="_blank" rel="noreferrer">
+                            <h3> Portfolio </h3>
+                        </a>
+                    </Row> 
+                </Col>
+                <Col>
+                    <Row> <h2> Weightlifting </h2> </Row>
+                    <Row>
+                        <a href="https://adamson.issacertifiedtrainer.com" target="_blank" rel="noreferrer">
+                            <h3> CPT </h3>
+                        </a>
+                    </Row>
+                    <Row>
+                        <a href="https://www.issaonline.com/" target="_blank" rel="noreferrer">
+                            <h3> ISSA </h3>
+                        </a>
+                    </Row>
+                    <Row>
+                        <a href="https://www.youtube.com/watch?v=iik25wqIuFo" target="_blank" rel="noreferrer">
+                            <h3> Tokyo 2020 </h3>
+                        </a>
+                    </Row> 
+                </Col>
+                <Col>
+                    <Row> <h2> Stuff I Like </h2> </Row>
+                    <Row>
+                        <a href="https://www.netflix.com/title/70205012" target="_blank" rel="noreferrer">
+                            <h3> Naruto </h3>
+                        </a>
+                    </Row>
+                    <Row>
+                        <a href="https://www.youtube.com/watch?v=s3zzz2lxLeg" target="_blank" rel="noreferrer">
+                            <h3> Art </h3>
+                        </a>
+                    </Row>
+                    <Row>
+                        <a href="https://liftingugly.com/" target="_blank" rel="noreferrer">
+                            <h3> Lifting Ugly </h3>
+                        </a>
+                    </Row> 
+                </Col>
+            </Row>
+            <h4> Colorado Springs, CO, USA </h4>
         </Container>
     );
 }

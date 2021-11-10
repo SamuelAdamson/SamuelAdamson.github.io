@@ -215,12 +215,12 @@ class Home extends Component {
                         </Container>,
                         <Container className="lower-content-body">
                             <Row className="profile-row lower">
-                                <Col>
+                                <Col className="my-auto">
                                     <h2> Past Experience </h2>
                                     <br />
                                     <h4> 
                                         Previously I worked as an IT Technician for a network management
-                                        contractor, Grand Mesa Software. where I developed technical know how and problem solving
+                                        contractor, Grand Mesa Software, where I developed technical know how and problem solving
                                         skills. Following my third year of high school I worked in game development
                                         at Synaptix Games.
                                     </h4>
@@ -232,7 +232,7 @@ class Home extends Component {
                         </Container>,
                         <Container className="lower-content-body">
                         <Row className="profile-row lower">
-                            <Col>
+                            <Col className="my-auto">
                                 <h2> AFK </h2>
                                 <br />
                                 <h4> 

@@ -154,10 +154,6 @@ a:hover {
     margin-left: calc((100vw - 1320px) / 2);
     margin-right: calc((100vw - 1320px) / 2);
 }
-.DynoFull {
-    border-bottom-left-radius: 0rem;
-    border-bottom-right-radius: 0rem;
-}
 .Dyno.in-view {
     margin: 0;
 }
@@ -169,6 +165,13 @@ a:hover {
 .Dyno .dyno-content.show {
     filter: opacity(1);
     transform: scale(1.075);
+}
+.DynoFull {
+    border-bottom-left-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+}
+.DynoFull.in-view {
+    padding-bottom: 11rem;
 }
 .DynoFull .dyno-content-full {
     filter: opacity(0);
@@ -185,10 +188,18 @@ a:hover {
     color: #ffffff;
     text-align: center;
     padding-top: 5vh;
-    padding-bottom: 5vh;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.Footer .row {
+    margin-bottom: 1rem;
+}
+.Footer .row .col {
+    margin-bottom: 2rem;
 }
 .Footer .list-group {
     background-color: #333333;
+    margin-bottom: 2rem;
 }
 .Footer .list-group-item {
     margin-left: 0.75rem;
@@ -207,12 +218,24 @@ a:hover {
     font-size: 2.2rem !important;
 }
 .Footer h3 {
+    color: #ffffff;
     font-size: 1.5rem;
     transition: all ease 400ms;
     animation: none;
+    width: fit-content;  
+    display: inline-block;
 }
-.Footer h3:hover {
-    transform: scale(1.05);
+.Footer h3:after {
+    display: block;
+    height: 4px;
+    width: 0;
+    content: '';
+    background: none repeat scroll 0 0 transparent;
+    background-color: #ffffff;
+    transition: ease 0.4s;
+}
+.Footer h3:hover:after {
+    width: 100%;
 }
 
 /* HOME PAGE ----------------------------------------------------------------------------------------------------------------- */
