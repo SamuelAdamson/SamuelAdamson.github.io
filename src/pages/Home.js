@@ -143,7 +143,7 @@ class Home extends Component {
                     </Container>
                 }/>
 
-                <Reveal effect="fadeOnScroll">
+                <Reveal effect="fadeOnScroll" duration={1000}>
                     <Container className="mid-header">
                         <h1> <strong> My perspective </strong> </h1>
                         <h2> 

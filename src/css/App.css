@@ -127,7 +127,6 @@ a:hover {
 
 .fadeOnScroll { /* Animation */
     animation-name: fadeOnScroll;
-    animation-duration: 1s;
 }
 
 /* DYNAMIC CONTAINER --------------------------------------------------------------------------------------------------------- */
@@ -146,7 +145,7 @@ a:hover {
     padding-top: 5rem;
     padding-bottom: 5rem;
     width: 100%;
-    transition: all ease 1s;
+    transition: all ease 0.7s;
 
     /* Will Change */
     padding-left: 0.75rem;
@@ -160,7 +159,7 @@ a:hover {
 .Dyno .dyno-content {
     filter: opacity(0);
     transform: scale(0.95);
-    transition: all ease 1s;
+    transition: all ease 0.7s;
 }
 .Dyno .dyno-content.show {
     filter: opacity(1);
@@ -176,7 +175,7 @@ a:hover {
 .DynoFull .dyno-content-full {
     filter: opacity(0);
     transform: translateY(10vh) scale(0.95);
-    transition: all ease 1s;
+    transition: all ease 0.6s;
 }
 .DynoFull .dyno-content-full.show {
     filter: opacity(1);
@@ -193,6 +192,10 @@ a:hover {
 }
 .Footer .row {
     margin-bottom: 1rem;
+    filter: opacity(0);
+}
+.foot-show.row {
+    filter: opacity(1);
 }
 .Footer .row .col {
     margin-bottom: 2rem;
@@ -236,6 +239,29 @@ a:hover {
 }
 .Footer h3:hover:after {
     width: 100%;
+}
+.Footer .row .row.foot-show-1 { /* Fade in row 1 */
+    filter: opacity(1);
+    transition: all ease 1s;
+    transition-delay: 200ms;
+}
+
+.Footer .row .row.foot-show-2 { /* Fade in row 2 */
+    filter: opacity(1);
+    transition: all ease 1s;
+    transition-delay: 700ms;
+}
+
+.Footer .row .row.foot-show-3 { /* Fade in row 3 */
+    filter: opacity(1);
+    transition: all ease 1s;
+    transition-delay: 1200ms;
+}
+
+.Footer .row .row.foot-show-4 { /* Fade in row 4 */
+    filter: opacity(1);
+    transition: all ease 1s;
+    transition-delay: 1700ms;
 }
 
 /* HOME PAGE ----------------------------------------------------------------------------------------------------------------- */
