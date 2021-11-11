@@ -193,6 +193,7 @@ a:hover {
 .Footer .row {
     margin-bottom: 1rem;
     filter: opacity(0);
+    transition: all ease 1s;
 }
 .foot-show.row {
     filter: opacity(1);
