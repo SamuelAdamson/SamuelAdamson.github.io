@@ -16,6 +16,31 @@ a:hover {
 }
 
 
+/* ACCORDION ----------------------------------------------------------------------------------------------------------------- */
+.accordion {
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+.accordion-item {
+    border-left: 3px solid #ffffff !important;
+    border-right: 3px solid #ffffff !important;
+    border-bottom: none !important;
+    color: #ffffff;
+    background-color: #333333;
+}
+.accordion-item:after {
+    display: block;
+    height: 3px;
+    width: 0;
+    content: '';
+    background: none repeat scroll 0 0 transparent;
+    background-color: #ffffff;
+    transition: ease 0.6s;
+}
+.accordion-item:hover:after {
+    width: 100%;
+}
+
 /* NAVIGATION BAR ------------------------------------------------------------------------------------------------------------ */
 .nav-item { /* Navigation Items */
     color: #333333;
@@ -355,6 +380,7 @@ a:hover {
 
 .lower-content-head .profile-row.lower{
     margin-top: 8vh;
+    padding-top: 3rem;
     margin-bottom: 5vh;
 }
 
@@ -397,4 +423,21 @@ a:hover {
     content: '';
     background: none repeat scroll 0 0 transparent;
     background-color: #ffffff;
+}
+
+.acc-img {
+    width: 64px;
+    height: auto;
+    transition: all ease 0.4s;
+}
+.acc-img2 {
+    width: 48px;
+    height: auto;
+    transition: all ease 0.4s;
+}
+.acc-img:hover {
+    transform: scale(0.95);
+}
+.acc-img2:hover {
+    transform: scale(0.95);
 }

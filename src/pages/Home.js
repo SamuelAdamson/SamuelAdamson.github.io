@@ -1,7 +1,7 @@
 // HOME PAGE -- Portfolio
 // Author: Samuel Adamson
 import { Component } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Accordion } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 // Components
 import SplashScreen from './components/SplashScreen';
@@ -15,6 +15,12 @@ import CU from '../img/home/cu.jpg';
 import Monument from '../img/home/monument.jpg';
 import Server from '../img/home/server.jpg';
 import Lift from '../img/home/lift.jpg';
+import UCCS from '../img/logo/uccs.png';
+import CUB from '../img/logo/cuboulder.png';
+import CMU from '../img/logo/cmu.webp';
+import MH from '../img/logo/mh.png';
+import GMS from '../img/logo/gms.png';
+import SG from '../img/logo/synaptix.png';
 
 // First Instance of Home -- Render Splash Screen
 let firstInstance = true;
@@ -152,7 +158,7 @@ class Home extends Component {
                     </Container>
                 </Reveal>
 
-                <DynoFull thresh={ 0.2 }  
+                <DynoFull thresh={ 0.1 }  
                     initialProp={
                         <Container className="lower-content-head"> 
                             <Row className="profile-row lower">
@@ -184,7 +190,7 @@ class Home extends Component {
                                         After graduating salutatorian from Grand Junction High School in 2019,
                                         I began my undergraduate studies at the University of Colorado. During
                                         my junior year I declared a focus in Artificial Intelligence.
-                                        Throughout my educational career, I maintain a 4.0 GPA.
+                                        Throughout my academic career, I maintain a 4.0 GPA.
                                     </h4>
                                 </Col>
                                 <Col>
@@ -246,6 +252,75 @@ class Home extends Component {
                                 <img src={ Lift } alt="Work Experience" className="profile-img" />
                             </Col>
                         </Row>
+                    </Container>,
+                    <Container>
+                        <Accordion flush>
+                            <Accordion.Item eventKey="0">
+                                <Accordion.Header>
+                                    <h2> Education </h2>
+                                </Accordion.Header>
+                                <Accordion.Body>
+                                    <Row>
+                                        <Col sm={4} />
+                                        <Col className="my-auto">
+                                            <a href="https://www.uccs.edu/" target="_blank" rel="noreferrer">
+                                                <img src={ UCCS } alt="UCCS" className="acc-img" />
+                                            </a>
+                                        </Col>
+                                        <Col className="my-auto">
+                                            <a href="https://www.colorado.edu/" target="_blank" rel="noreferrer">
+                                                <img src={ CUB } alt="CU Boulder" className="acc-img" />
+                                            </a>
+                                        </Col>
+                                        <Col className="my-auto">
+                                            <a href="https://www.coloradomesa.edu/" target="_blank" rel="noreferrer">
+                                                <img src={ CMU } alt="Colorado Mesa" className="acc-img" />
+                                            </a>
+                                        </Col>
+                                        <Col sm={4} />
+                                    </Row>
+                                </Accordion.Body>
+                            </Accordion.Item>
+
+                            <Accordion.Item eventKey="1">
+                                <Accordion.Header>
+                                    <h2> Experience </h2>
+                                </Accordion.Header>
+                                <Accordion.Body>
+                                    <Row>
+                                        <Col sm={4} />
+                                        <Col className="my-auto">
+                                            <a href="https://monumenthealth.net/" target="_blank" rel="noreferrer">
+                                                <img src={ MH } alt="Monument Health" className="acc-img2" />
+                                            </a>
+                                        </Col>
+                                        <Col className="my-auto">
+                                            <a href="https://gmsdnd.com/" target="_blank" rel="noreferrer">
+                                                <img src={ GMS } alt="Grand Mesa Software" className="acc-img" />
+                                            </a>
+                                        </Col>
+                                        <Col className="my-auto">
+                                            <a href="http://synaptixgames.com/" target="_blank" rel="noreferrer">
+                                                <img src={ SG } alt="Synaptix Games" className="acc-img2" />
+                                            </a>
+                                        </Col>
+                                        <Col sm={4} />
+                                    </Row>
+                                </Accordion.Body>
+                            </Accordion.Item>
+
+                            <Accordion.Item eventKey="2">
+                                <Accordion.Header>
+                                    <h2> Lifting </h2>
+                                </Accordion.Header>
+                            </Accordion.Item>
+
+                            <Accordion.Item eventKey="3">
+                                <Accordion.Header>
+                                    <h2> Freelance </h2>
+                                </Accordion.Header>
+                            </Accordion.Item>
+                        </Accordion>
                     </Container>
                 ]}
                 foot={

@@ -57,7 +57,7 @@ const Footer = () => {
                         </a>
                     </Row>
                     <Row className={ inView1 || loaded1 ? 'foot-show-3' : null }>
-                        <a href="https://www.fiverr.com/giibbi">
+                        <a href="https://www.fiverr.com/giibbi" target="_blank" rel="noreferrer">
                             <h3> Fiverr </h3>
                         </a>
                     </Row>

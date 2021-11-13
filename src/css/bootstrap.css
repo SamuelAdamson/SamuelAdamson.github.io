@@ -4406,6 +4406,7 @@ textarea.form-control-lg {
   }
 }
 
+ 
 .accordion-button {
   position: relative;
   display: flex;
@@ -4413,13 +4414,13 @@ textarea.form-control-lg {
   width: 100%;
   padding: 1rem 1.25rem;
   font-size: 1rem;
-  color: #212529;
+  color: #ffffff; /* MODIFIED */
   text-align: left;
-  background-color: #fff;
+  background-color: transparent; /* MODIFIED */
   border: 0;
   border-radius: 0;
   overflow-anchor: none;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
+  transition: all ease 0.6s; /* MODIFIED */
 }
 @media (prefers-reduced-motion: reduce) {
   .accordion-button {
@@ -4427,11 +4428,11 @@ textarea.form-control-lg {
   }
 }
 .accordion-button:not(.collapsed) {
-  color: #0c63e4;
-  background-color: #e7f1ff;
+  color: #ffffff; /* MODIFIED */
+  background-color: transparent; /* MODIFIED */
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
 }
-.accordion-button:not(.collapsed)::after {
+/*.accordion-button:not(.collapsed)::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230c63e4'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
   transform: rotate(-180deg);
 }
@@ -4445,7 +4446,7 @@ textarea.form-control-lg {
   background-repeat: no-repeat;
   background-size: 1.25rem;
   transition: transform 0.2s ease-in-out;
-}
+}*/
 @media (prefers-reduced-motion: reduce) {
   .accordion-button::after {
     transition: none;
@@ -4456,9 +4457,9 @@ textarea.form-control-lg {
 }
 .accordion-button:focus {
   z-index: 3;
-  border-color: #86b7fe;
+  border-color: #ffffff;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  /*box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25); */ /* MODIFIED */
 }
 
 .accordion-header {
