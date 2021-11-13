@@ -21,6 +21,8 @@ import CMU from '../img/logo/cmu.webp';
 import MH from '../img/logo/mh.png';
 import GMS from '../img/logo/gms.png';
 import SG from '../img/logo/synaptix.png';
+import ISSA from '../img/logo/issa.png';
+import Fiverr from '../img/logo/fiverr.png';
 
 // First Instance of Home -- Render Splash Screen
 let firstInstance = true;
@@ -311,14 +313,24 @@ class Home extends Component {
 
                             <Accordion.Item eventKey="2">
                                 <Accordion.Header>
-                                    <h2> Lifting </h2>
-                                </Accordion.Header>
-                            </Accordion.Item>
-
-                            <Accordion.Item eventKey="3">
-                                <Accordion.Header>
                                     <h2> Freelance </h2>
                                 </Accordion.Header>
+                                <Accordion.Body>
+                                    <Row>
+                                        <Col sm={4} />
+                                        <Col className="my-auto">
+                                            <a href="https://adamson.issacertifiedtrainer.com/" target="_blank" rel="noreferrer">
+                                                <img src={ ISSA } alt="ISSA" className="acc-img" />
+                                            </a>
+                                        </Col>
+                                        <Col className="my-auto">
+                                            <a href="https://www.fiverr.com/giibbi" target="_blank" rel="noreferrer">
+                                                <img src={ Fiverr } alt="Fiverr" className="acc-img" />
+                                            </a>
+                                        </Col>
+                                        <Col sm={4} />
+                                    </Row>
+                                </Accordion.Body>
                             </Accordion.Item>
                         </Accordion>
                     </Container>

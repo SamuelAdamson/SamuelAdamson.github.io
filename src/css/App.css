@@ -426,12 +426,12 @@ a:hover {
 }
 
 .acc-img {
-    width: 64px;
+    width: calc(64px + 2vw);
     height: auto;
     transition: all ease 0.4s;
 }
 .acc-img2 {
-    width: 48px;
+    width: calc(48px + 1vw);
     height: auto;
     transition: all ease 0.4s;
 }
