@@ -352,7 +352,7 @@ a:hover {
 }
 .home-header h2 {
     padding-top: 2px;
-    font-size: calc(0.75rem + 2vw);
+    font-size: calc(0.75rem + 2.2vw);
     filter: opacity(0);
     transform: translateY(2vh);
     transition: ease 0.8s;
@@ -374,7 +374,7 @@ a:hover {
 }
 .mid-header h2 {
     padding-top: 2vh;
-    font-size: calc(0.75rem + 2vw);
+    font-size: calc(0.75rem + 2.2vw);
     filter: opacity(0.8);
 }
 
@@ -440,4 +440,37 @@ a:hover {
 }
 .acc-img2:hover {
     transform: scale(0.95);
+}
+
+/* PROJECTS PAGE ------------------------------------------------------------------------------------------------------------- */
+.Projects {
+    text-align: left;
+    color: #333333;
+}
+.proj-header {
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+.proj-header h1 {
+    font-size: calc(2rem + 7.5vw);
+    filter: opacity(0);
+    transform: translateY(2vh);
+    transition: ease 0.7s;
+}
+.proj-header h1.show {
+    filter: opacity(1);
+    transform: none;
+}
+.proj-header h2 {
+    padding-top: 2px;
+    font-size: calc(0.75rem + 2.2vw);
+    filter: opacity(0);
+    transform: translateY(2vh);
+    transition: ease 0.8s;
+}
+.proj-header h2.show {
+    filter: opacity(0.8);
+    transform: none;
 }
