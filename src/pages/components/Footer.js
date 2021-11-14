@@ -41,7 +41,7 @@ const Footer = () => {
                         </a>
                     </ListGroup.Item>
                     <ListGroup.Item>
-                        <a href="https://www.instagram.com/lilgiibb/?hl=en" target="_blank" rel="noreferrer"> 
+                        <a href="https://www.instagram.com/giibbei/?hl=en" target="_blank" rel="noreferrer"> 
                             <img src={ Instagram } height="48" width="48" alt="Instagram"/>
                         </a>
                     </ListGroup.Item>

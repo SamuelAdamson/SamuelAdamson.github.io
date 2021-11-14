@@ -160,8 +160,8 @@ class Home extends Component {
                     </Container>
                 </Reveal>
 
-                <DynoFull thresh={ 0.1 }  
-                    initialProp={
+                <DynoFull thresh={ 0.15 }  
+                    props={[
                         <Container className="lower-content-head"> 
                             <Row className="profile-row lower">
                                 <Col>
@@ -180,9 +180,7 @@ class Home extends Component {
                                 <Col sm={3} />
                             </Row>
                             <br />
-                        </Container>
-                    }
-                    props={[
+                        </Container>,
                         <Container className="lower-content-body">
                             <Row className="profile-row lower">
                                 <Col className="my-auto">
@@ -251,7 +249,7 @@ class Home extends Component {
                                 </h4>
                             </Col>
                             <Col>
-                                <img src={ Lift } alt="Work Experience" className="profile-img" />
+                                <img src={ Lift } alt="AFK" className="profile-img" />
                             </Col>
                         </Row>
                     </Container>,
