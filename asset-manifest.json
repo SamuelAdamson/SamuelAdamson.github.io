@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "./static/css/main.db0749de.chunk.css",
-    "main.js": "./static/js/main.dfa7d4f9.chunk.js",
-    "main.js.map": "./static/js/main.dfa7d4f9.chunk.js.map",
+    "main.css": "./static/css/main.5140daf1.chunk.css",
+    "main.js": "./static/js/main.f0c595b1.chunk.js",
+    "main.js.map": "./static/js/main.f0c595b1.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.a8b3c379.js",
     "runtime-main.js.map": "./static/js/runtime-main.a8b3c379.js.map",
     "static/js/2.3defa897.chunk.js": "./static/js/2.3defa897.chunk.js",
     "static/js/2.3defa897.chunk.js.map": "./static/js/2.3defa897.chunk.js.map",
     "index.html": "./index.html",
-    "static/css/main.db0749de.chunk.css.map": "./static/css/main.db0749de.chunk.css.map",
+    "static/css/main.5140daf1.chunk.css.map": "./static/css/main.5140daf1.chunk.css.map",
     "static/js/2.3defa897.chunk.js.LICENSE.txt": "./static/js/2.3defa897.chunk.js.LICENSE.txt",
     "static/media/index.css": "./static/media/Poppins-Medium.9e1bb626.ttf",
     "static/media/cmu.20840f0d.webp": "./static/media/cmu.20840f0d.webp",
@@ -35,7 +35,7 @@
   "entrypoints": [
     "static/js/runtime-main.a8b3c379.js",
     "static/js/2.3defa897.chunk.js",
-    "static/css/main.db0749de.chunk.css",
-    "static/js/main.dfa7d4f9.chunk.js"
+    "static/css/main.5140daf1.chunk.css",
+    "static/js/main.f0c595b1.chunk.js"
   ]
 }
