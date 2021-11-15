@@ -20,13 +20,13 @@ class Proj extends Component {
                         <Col sm={1} />
                         <Col className="car">
                             <Carousel variant={ this.props.variant }>
-                                <Carousel.Item interval={3000}>
+                                <Carousel.Item interval={2000}>
                                     <img src={ this.props.image1 } alt="carousel" />
                                 </Carousel.Item>
-                                <Carousel.Item interval={3000}>
+                                <Carousel.Item interval={2000}>
                                     <img src={ this.props.image2 } alt="carousel" />
                                 </Carousel.Item>
-                                <Carousel.Item interval={3000}>
+                                <Carousel.Item interval={2000}>
                                     <img src={ this.props.image3 } alt="carousel" />
                                 </Carousel.Item>
                             </Carousel>

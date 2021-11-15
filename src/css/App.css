@@ -157,7 +157,9 @@ a:hover {
 /* DYNAMIC CONTAINER --------------------------------------------------------------------------------------------------------- */
 .dyno-wrapper {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 .Dyno {
     display: flex;
@@ -169,17 +171,15 @@ a:hover {
     color: #ffffff;
     padding-top: 5rem;
     padding-bottom: 5rem;
-    width: 100%;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
     transition: all ease 0.7s;
 
     /* Will Change */
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-    margin-left: calc((100vw - 1320px) / 2);
-    margin-right: calc((100vw - 1320px) / 2);
+    width: 80%;
 }
 .Dyno.in-view {
-    margin: 0;
+    width: 100%;
 }
 .Dyno .dyno-content {
     filter: opacity(0);
@@ -190,26 +190,36 @@ a:hover {
     filter: opacity(1);
     transform: scale(1.075);
 }
+
 .DynoFull {
     border-bottom-left-radius: 0rem;
     border-bottom-right-radius: 0rem;
 }
 .DynoFull .dyno-content-full {
     width: 100%;
+}
+.dyno-content-full .init-prop {
     filter: opacity(0);
-    transition: all ease 0.7s;
+    transform: translateY(10vh);
+    transition: all ease 1.2s;
 }
-.DynoFull .dyno-content-full.show {
+.dyno-content-full .init-prop.show {
     filter: opacity(1);
+    transform: translateY(0);
 }
-
-.DynoFull .dyno-content-full h1 { /* Increase all fonts by 1.075x */
+.dyno-content-full-bottom {
+    background-color: #333333;
+    color: #ffffff;
+    width: 100%;
+    padding-bottom: 3rem;
+}
+.DynoFull .dyno-content-full h1, .dyno-content-full-bottom h1 { /* Increase all fonts by 1.075x */
     font-size: calc(1.478rem + 1.613vw);
 }
-.DynoFull .dyno-content-full h2 {
+.DynoFull .dyno-content-full h2, .dyno-content-full-bottom h2 {
     font-size: calc(1.425rem + 0.968vw);
 }
-.DynoFull .dyno-content-full h4 {
+.DynoFull .dyno-content-full h4, .dyno-content-full-bottom h4 {
     font-size: calc(1.371rem + 0.323vw);
 }
 

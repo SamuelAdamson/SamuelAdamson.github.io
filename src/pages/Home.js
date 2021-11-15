@@ -161,7 +161,7 @@ class Home extends Component {
                 </Reveal>
 
                 <DynoFull thresh={ 0.15 }  
-                    props={[
+                    initProp={
                         <Container className="lower-content-head"> 
                             <Row className="profile-row lower">
                                 <Col>
@@ -180,8 +180,6 @@ class Home extends Component {
                                 <Col sm={3} />
                             </Row>
                             <br />
-                        </Container>,
-                        <Container className="lower-content-body">
                             <Row className="profile-row lower">
                                 <Col className="my-auto">
                                     <h2> Education </h2>
@@ -196,9 +194,11 @@ class Home extends Component {
                                 <Col>
                                     <img src={ CU } alt="Univ of Colorado" className="profile-img" />
                                 </Col>
-                            </Row>
-                        </Container>,
-                        <Container className="lower-content-body">
+                            </Row>  
+                        </Container>
+                    }
+                    props={[
+                        <Container>
                             <Row className="profile-row lower">
                                 <Col className="my-auto">
                                     <h2> Professional Work </h2>
@@ -219,7 +219,7 @@ class Home extends Component {
                                 </Col>
                             </Row>
                         </Container>,
-                        <Container className="lower-content-body">
+                        <Container>
                             <Row className="profile-row lower">
                                 <Col className="my-auto">
                                     <h2> Past Experience </h2>
@@ -236,7 +236,7 @@ class Home extends Component {
                                 </Col>
                             </Row>
                         </Container>,
-                        <Container className="lower-content-body">
+                        <Container>
                         <Row className="profile-row lower">
                             <Col className="my-auto">
                                 <h2> AFK </h2>
