@@ -89,7 +89,7 @@ class Projects extends Component {
                     </div>
                 </Container>
 
-                <DynoFull thresh={ 0.1 } 
+                <DynoFull thresh={ 0.13 } 
                 initProp={
                     <Proj image1={ crypto1 } image2={ crypto2 } image3={ crypto3 } variant={ null }>
                         <h1> Crypto </h1>
