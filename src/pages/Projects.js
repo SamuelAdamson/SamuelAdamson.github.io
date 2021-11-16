@@ -14,7 +14,10 @@ import crypto3 from '../img/projects/crypto3.png';
 import WAMap1 from '../img/projects/wa-map1.png';
 import WAMap2 from '../img/projects/wa-map2.png';
 import WAMap3 from '../img/projects/wa-map3.png';
-
+// County Site Redesign
+import county1 from '../img/projects/county1.png';
+import county2 from '../img/projects/county2.png';
+import county3 from '../img/projects/county3.png';
 
 // First instance
 let firstInstance = true;
@@ -81,12 +84,12 @@ class Projects extends Component {
                     <div className="proj-header">
                         <h1 className={this.state.headerOne}> <strong> My projects </strong> </h1>
                         <h2 className={this.state.headerTwo}> 
-                            the best way to predict the future is to invent it - alan kay 
+                            building the future one step at a time
                         </h2>
                     </div>
                 </Container>
 
-                <DynoFull thresh={ 0.15 } 
+                <DynoFull thresh={ 0.1 } 
                 initProp={
                     <Proj image1={ crypto1 } image2={ crypto2 } image3={ crypto3 } variant={ null }>
                         <h1> Crypto </h1>
@@ -121,6 +124,25 @@ class Projects extends Component {
                         <br />
                         <div className="align-box">
                             <a href="https://github.com/SamuelAdamson/Weather-AirportProximity-Mapping" target="_blank" rel="noreferrer">
+                                <h4 className="lower-button"> repository </h4>
+                            </a>
+                        </div>
+                    </Proj>,
+                    <Proj image1={ county1 } image2={ county2 } image3={ county3 } variant="dark">
+                        <h1> County Site Redesign </h1>
+                        <br />
+                        <h4> 
+                            Using the ReactJS frontend framework, I created a modernized version of 
+                            my local County Clerk's Office website. The site is a single page application
+                            which optimizes the site's performance. Additionally, the site features updated
+                            reactivity and animations that were not present in the original site.
+                        </h4>
+                        <br />
+                        <div className="align-box">
+                            <a href="https://engl325-document-redesign.herokuapp.com/" target="_blank" rel="noreferrer">
+                                <h4 className="lower-button"> project </h4>
+                            </a>
+                            <a href="https://github.com/SamuelAdamson/eng325-redesign" target="_blank" rel="noreferrer">
                                 <h4 className="lower-button"> repository </h4>
                             </a>
                         </div>

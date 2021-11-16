@@ -188,20 +188,17 @@ a:hover {
 }
 .Dyno .dyno-content.show {
     filter: opacity(1);
-    transform: scale(1.075);
+    transform: scale(1);
 }
 
 .DynoFull {
     border-bottom-left-radius: 0rem;
     border-bottom-right-radius: 0rem;
 }
-.DynoFull .dyno-content-full {
-    width: 100%;
-}
 .dyno-content-full .init-prop {
     filter: opacity(0);
     transform: translateY(10vh);
-    transition: all ease 1.2s;
+    transition: all ease 0.7s;
 }
 .dyno-content-full .init-prop.show {
     filter: opacity(1);
@@ -213,16 +210,6 @@ a:hover {
     width: 100%;
     padding-bottom: 3rem;
 }
-.DynoFull .dyno-content-full h1, .dyno-content-full-bottom h1 { /* Increase all fonts by 1.075x */
-    font-size: calc(1.478rem + 1.613vw);
-}
-.DynoFull .dyno-content-full h2, .dyno-content-full-bottom h2 {
-    font-size: calc(1.425rem + 0.968vw);
-}
-.DynoFull .dyno-content-full h4, .dyno-content-full-bottom h4 {
-    font-size: calc(1.371rem + 0.323vw);
-}
-
 
 /* FOOTER -------------------------------------------------------------------------------------------------------------------- */
 .Footer {

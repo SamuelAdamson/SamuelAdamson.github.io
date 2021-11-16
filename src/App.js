@@ -4,6 +4,7 @@ import './css/App.css';
 // React Router
 import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import Navi from './pages/components/Navi';
+import ScrollToTop from './pages/components/ScrollToTop';
 // Pages
 import Home from './pages/Home';
 import Projects from './pages/Projects';
@@ -13,6 +14,7 @@ function App() {
         <div className="App">
             <Router hashType="slash">
                 <Navi />
+                <ScrollToTop />
                 <Switch>
                     <Route exact path = "/" component={ Home } />
                     <Route exact path = "/projects" component={ Projects } />
