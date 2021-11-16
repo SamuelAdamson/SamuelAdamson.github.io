@@ -427,6 +427,11 @@ a:hover {
     background-color: #ffffff;
 }
 
+.accordion-body .row .col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .acc-img {
     width: calc(64px + 2vw);
     height: auto;

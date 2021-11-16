@@ -262,17 +262,17 @@ class Home extends Component {
                                 <Accordion.Body>
                                     <Row>
                                         <Col sm={4} />
-                                        <Col className="my-auto">
+                                        <Col>
                                             <a href="https://www.uccs.edu/" target="_blank" rel="noreferrer">
                                                 <img src={ UCCS } alt="UCCS" className="acc-img" />
                                             </a>
                                         </Col>
-                                        <Col className="my-auto">
+                                        <Col>
                                             <a href="https://www.colorado.edu/" target="_blank" rel="noreferrer">
                                                 <img src={ CUB } alt="CU Boulder" className="acc-img" />
                                             </a>
                                         </Col>
-                                        <Col className="my-auto">
+                                        <Col>
                                             <a href="https://www.coloradomesa.edu/" target="_blank" rel="noreferrer">
                                                 <img src={ CMU } alt="Colorado Mesa" className="acc-img" />
                                             </a>
@@ -289,17 +289,17 @@ class Home extends Component {
                                 <Accordion.Body>
                                     <Row>
                                         <Col sm={4} />
-                                        <Col className="my-auto">
+                                        <Col>
                                             <a href="https://monumenthealth.net/" target="_blank" rel="noreferrer">
                                                 <img src={ MH } alt="Monument Health" className="acc-img2" />
                                             </a>
                                         </Col>
-                                        <Col className="my-auto">
+                                        <Col>
                                             <a href="https://gmsdnd.com/" target="_blank" rel="noreferrer">
                                                 <img src={ GMS } alt="Grand Mesa Software" className="acc-img" />
                                             </a>
                                         </Col>
-                                        <Col className="my-auto">
+                                        <Col>
                                             <a href="http://synaptixgames.com/" target="_blank" rel="noreferrer">
                                                 <img src={ SG } alt="Synaptix Games" className="acc-img2" />
                                             </a>
@@ -316,12 +316,12 @@ class Home extends Component {
                                 <Accordion.Body>
                                     <Row>
                                         <Col sm={4} />
-                                        <Col className="my-auto">
+                                        <Col>
                                             <a href="https://adamson.issacertifiedtrainer.com/" target="_blank" rel="noreferrer">
                                                 <img src={ ISSA } alt="ISSA" className="acc-img" />
                                             </a>
                                         </Col>
-                                        <Col className="my-auto">
+                                        <Col>
                                             <a href="https://www.fiverr.com/giibbi" target="_blank" rel="noreferrer">
                                                 <img src={ Fiverr } alt="Fiverr" className="acc-img" />
                                             </a>
