@@ -205,9 +205,8 @@ class Home extends Component {
                                     <br />
                                     <h4> 
                                         Currently I work at a clinically integrated healthcare network, Monument 
-                                        Health. As a data engineer, I build Extract Transfer Load Pipelines
-                                        which automate the flow of data into Cloud Based warehouses. I also contribute
-                                        to analysis and database infrastructure. 
+                                        Health. As an information technology intern, I build automated data infrastructure
+                                        in cloud based environments. Additionally, I contribute to data analysis.
                                     </h4>
                                     <br />
                                     <NavLink exact to="/projects">
