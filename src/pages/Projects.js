@@ -14,6 +14,10 @@ import crypto3 from '../img/projects/crypto3.png';
 import WAMap1 from '../img/projects/wa-map1.png';
 import WAMap2 from '../img/projects/wa-map2.png';
 import WAMap3 from '../img/projects/wa-map3.png';
+// COVID-19 vs Cryptocurrency
+import covcrypto1 from '../img/projects/covcrypto1.png'
+import covcrypto2 from '../img/projects/covcrypto2.png'
+import covcrypto3 from '../img/projects/covcrypto3.png'
 // County Site Redesign
 import county1 from '../img/projects/county1.png';
 import county2 from '../img/projects/county2.png';
@@ -124,6 +128,23 @@ class Projects extends Component {
                         <br />
                         <div className="align-box">
                             <a href="https://github.com/SamuelAdamson/Weather-AirportProximity-Mapping" target="_blank" rel="noreferrer">
+                                <h4 className="lower-button"> repository </h4>
+                            </a>
+                        </div>
+                    </Proj>,
+                    <Proj image1={ covcrypto1 } image2={ covcrypto2 } image3={ covcrypto3 } variant="dark">
+                        <h1> COVID-19 Prevalence vs. Cryptocurrency Popularity </h1>
+                        <br />
+                        <h4> 
+                            Utilizing various data science tools including Pandas and Google Cloud Bigquery,
+                            I conducted some analysis on the relationship between COVID-19 Prevalence and 
+                            Cryptocurrency popularity. Metrics used in this project include
+                            Bitcoin and Ethereum blockchain data as well as COVID-19 case/death count.
+                            In this exercise, I utilized Python, R, and SQL. 
+                        </h4>
+                        <br />
+                        <div className="align-box">
+                            <a href="https://github.com/SamuelAdamson/covid-crypto" target="_blank" rel="noreferrer">
                                 <h4 className="lower-button"> repository </h4>
                             </a>
                         </div>
