@@ -98,7 +98,7 @@ class Home extends Component {
                 <Container>
                     <div className="home-header">
                         <h1 className={this.state.headerOne}> <strong> Samuel Adamson </strong> </h1>
-                        <h2 className={this.state.headerTwo}> computer science student, weightlifter </h2>
+                        <h2 className={this.state.headerTwo}> data engineer, computer science student, weightlifter </h2>
                     </div>
                 </Container>
 
@@ -205,7 +205,7 @@ class Home extends Component {
                                     <br />
                                     <h4> 
                                         Currently I work at a clinically integrated healthcare network, Monument 
-                                        Health. As an information technology intern, I build automated data infrastructure
+                                        Health. As a data engineer, I build automated data infrastructure
                                         in cloud based environments. Additionally, I contribute to data analysis.
                                     </h4>
                                     <br />
