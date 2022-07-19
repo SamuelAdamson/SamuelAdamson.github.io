@@ -98,7 +98,7 @@ class Home extends Component {
                 <Container>
                     <div className="home-header">
                         <h1 className={this.state.headerOne}> <strong> Samuel Adamson </strong> </h1>
-                        <h2 className={this.state.headerTwo}> data engineer, computer science student, weightlifter </h2>
+                        <h2 className={this.state.headerTwo}> software engineer, computer science student, weightlifter </h2>
                     </div>
                 </Container>
 
@@ -106,11 +106,11 @@ class Home extends Component {
                     <Container>
                         <Row className="profile-row">
                             <Col>
-                                <h2> Data Engineering </h2>
+                                <h2> Software Engineering </h2>
                                 <br />
                                 <h4>  
-                                    I build automated systems to manage
-                                    and analyze large amounts of protected data.
+                                    I build a variety of software including web applications,
+                                    data analysis dashboards, and ETL Pipelines.
                                 </h4>
                             </Col>
                             <Col>
