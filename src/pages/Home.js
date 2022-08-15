@@ -141,7 +141,7 @@ class Home extends Component {
                                     of 14 and two years later I started my first internship as a 
                                     Junior Game Developer. After high school, I entered the University 
                                     of Colorado as a computer science major. Alongside my studies, I work 
-                                    as a data engineer in the healthcare industry.
+                                    as a software engineer intern.
                                 </h4>
                             </Col>
                             <Col>
