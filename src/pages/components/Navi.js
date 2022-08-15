@@ -5,7 +5,7 @@ import { Navbar, Container, Button, Offcanvas } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 // Images for Navigation
 import Site from '../../img/site-logo.png'
-
+import Resume from '../../img/sa.pdf'
 
 class Navi extends Component {
     constructor() {
@@ -62,12 +62,17 @@ class Navi extends Component {
                                     </NavLink>
                                 </div>
                                 <div className="right-nav-item">
+                                    <Button href={Resume} target="_blank" rel="noreferrer" variant="custom" size="lg"> 
+                                        <h3> resume </h3> 
+                                    </Button>
+                                </div>
+                                <div className="right-nav-item">
                                     <Button variant="custom-social" size="lg" href="https://github.com/SamuelAdamson" target="_blank" rel="noreferrer"> 
                                         <h3> GitHub </h3> 
                                     </Button>
                                 </div>
                                 <div className="right-nav-item">
-                                    <Button variant="custom-social" size="lg" href="https://www.linkedin.com/in/samuel-adamson-4397051b8/" target="_blank" rel="noreferrer"> 
+                                    <Button variant="custom-social" size="lg" href="https://www.linkedin.com/in/samuel-adamson-cs/" target="_blank" rel="noreferrer"> 
                                         <h3> LinkedIn </h3> 
                                     </Button>
                                 </div>
@@ -86,6 +91,12 @@ class Navi extends Component {
                                             <h4> projects </h4> 
                                         </Button>
                                     </NavLink>
+                                </div>
+                                <div className="offc-sep"/>
+                                <div className="nav-item-offc">
+                                    <Button variant="custom-offc" href={Resume} target="_blank" rel="noreferrer" size="lg" onClick={ this.handleOffcanvasClose }> 
+                                        <h4> resume </h4> 
+                                    </Button>
                                 </div>
                                 <div className="offc-sep"/>
                                 <div className="nav-item-offc">

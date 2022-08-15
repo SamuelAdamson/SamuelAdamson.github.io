@@ -110,7 +110,7 @@ class Home extends Component {
                                 <br />
                                 <h4>  
                                     I build a variety of software including web applications,
-                                    data analysis dashboards, and ETL Pipelines.
+                                    data analysis dashboards, command land interfaces, and ETL Pipelines.
                                 </h4>
                             </Col>
                             <Col>
@@ -204,9 +204,11 @@ class Home extends Component {
                                     <h2> Professional Work </h2>
                                     <br />
                                     <h4> 
-                                        Currently I work at a clinically integrated healthcare network, Monument 
-                                        Health. As a data engineer, I build automated data infrastructure
-                                        in cloud based environments. Additionally, I contribute to data analysis.
+                                        Currently, I work as a Software Engineer Intern at MITRE Corporation
+                                        as part of the High Performance Computing team. My body of work is  
+                                        focused on monitoring resource utilization and cluster performance. 
+                                        I have helped build and maintain a surveillance web application with data 
+                                        analysis dashboards using Python, Django, and ReactJS.
                                     </h4>
                                     <br />
                                     <NavLink exact to="/projects">
@@ -224,10 +226,12 @@ class Home extends Component {
                                     <h2> Past Experience </h2>
                                     <br />
                                     <h4> 
-                                        Previously I worked as an IT Technician for a network management
-                                        contractor, Grand Mesa Software, where I developed technical know how and problem solving
-                                        skills. Following my third year of high school I worked in game development
-                                        at Synaptix Games.
+                                        Previously I worked in the healthcare industry as a Data Engineer 
+                                        where my work primarily surrounded ETL pipeline development using
+                                        Python, Google BigQuery, and other Google Cloud Platform technologies.
+                                        Additionally, I worked with a Health and Wellness application built in 
+                                        PHP and Laravel. This included troubleshooting outages and migration to 
+                                        Google Cloud Platform from Amazon Web Services.
                                     </h4>
                                 </Col>
                                 <Col>

@@ -36,7 +36,7 @@ const Footer = () => {
                         </a>
                     </ListGroup.Item>
                     <ListGroup.Item>
-                        <a href="https://www.linkedin.com/in/samuel-adamson-4397051b8/" target="_blank" rel="noreferrer"> 
+                        <a href="https://www.linkedin.com/in/samuel-adamson-cs/" target="_blank" rel="noreferrer"> 
                             <img src={ LinkedIn } height="48" width="48" alt="LinkedIn"/>
                         </a>
                     </ListGroup.Item>
