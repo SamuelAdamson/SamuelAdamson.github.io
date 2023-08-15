@@ -106,9 +106,6 @@ class Projects extends Component {
                         </h4>
                         <br />
                         <div className="align-box">
-                            <a href="https://crypto-sparkline.herokuapp.com/" target="_blank" rel="noreferrer">
-                                <h4 className="lower-button"> project </h4>
-                            </a>
                             <a href="https://github.com/SamuelAdamson/crypto-sa" target="_blank" rel="noreferrer">
                                 <h4 className="lower-button"> repository </h4>
                             </a>
@@ -160,9 +157,6 @@ class Projects extends Component {
                         </h4>
                         <br />
                         <div className="align-box">
-                            <a href="https://engl325-document-redesign.herokuapp.com/" target="_blank" rel="noreferrer">
-                                <h4 className="lower-button"> project </h4>
-                            </a>
                             <a href="https://github.com/SamuelAdamson/eng325-redesign" target="_blank" rel="noreferrer">
                                 <h4 className="lower-button"> repository </h4>
                             </a>

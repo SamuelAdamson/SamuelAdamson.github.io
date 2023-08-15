@@ -12,12 +12,9 @@ import Footer from './components/Footer';
 // Images
 import Profile from '../img/home/profile.jpg';
 import CU from '../img/home/cu.jpg';
-import Monument from '../img/home/monument.jpg';
 import Server from '../img/home/server.jpg';
 import Lift from '../img/home/lift.jpg';
 import UCCS from '../img/logo/uccs.png';
-import CUB from '../img/logo/cuboulder.png';
-import CMU from '../img/logo/cmu.webp';
 import MH from '../img/logo/mh.png';
 import GMS from '../img/logo/gms.png';
 import SG from '../img/logo/synaptix.png';
@@ -102,23 +99,23 @@ class Home extends Component {
                     </div>
                 </Container>
 
-                <Dyno thresh={ 0.6 }  props={
+                <Dyno thresh={ 0.55 }  props={
                     <Container>
                         <Row className="profile-row">
                             <Col>
                                 <h2> Software Engineering </h2>
                                 <br />
                                 <h4>  
-                                    I build a variety of software including web applications,
-                                    data analysis dashboards, command land interfaces, and ETL Pipelines.
+                                    I have worked in multiple software engineering roles, building software such 
+                                    as dashboard web applications, ETL pipelines, and processor emulators.
                                 </h4>
                             </Col>
                             <Col>
-                                <h2> AI </h2>
+                                <h2> Cloud Computing </h2>
                                 <br />
                                 <h4>
-                                    I am majoring in computer science with a focus
-                                    in artificial intelligence.
+                                    I am passionate about Cloud Computing and its applications. 
+                                    As of July 2023 I am a certified HashiCorp Terraform associate.
                                 </h4>
                             </Col>
                             <Col>
@@ -140,8 +137,7 @@ class Home extends Component {
                                     for computing. I began writing object oriented code at the age 
                                     of 14 and two years later I started my first internship as a 
                                     Junior Game Developer. After high school, I entered the University 
-                                    of Colorado as a computer science major. Alongside my studies, I work 
-                                    as a software engineer intern.
+                                    of Colorado as a computer science major.
                                 </h4>
                             </Col>
                             <Col>
@@ -186,8 +182,7 @@ class Home extends Component {
                                     <br />
                                     <h4> 
                                         After graduating salutatorian from Grand Junction High School in 2019,
-                                        I began my undergraduate studies at the University of Colorado. During
-                                        my junior year I declared a focus in Artificial Intelligence.
+                                        I began my undergraduate studies at the University of Colorado. 
                                         Throughout my academic career, I maintain a 4.0 GPA.
                                     </h4>
                                 </Col>
@@ -204,35 +199,17 @@ class Home extends Component {
                                     <h2> Professional Work </h2>
                                     <br />
                                     <h4> 
-                                        Currently, I work as a Software Engineer Intern at MITRE Corporation
-                                        as part of the High Performance Computing team. My body of work is  
-                                        focused on monitoring resource utilization and cluster performance. 
-                                        I have helped build and maintain a surveillance web application with data 
-                                        analysis dashboards using Python, Django, and ReactJS.
+                                        Over the past few years I have worked in multiple industries as 
+                                        both a software engineer intern and data engineer. Some of these 
+                                        organizations include JPMorgan Chase & Co, Carrier Global, and 
+                                        The MITRE Corporation. In my roles I have worked on projects with a 
+                                        focus in full-stack development, cloud computing infrastructure,  
+                                        high performance computing, and 3D data transformations.
                                     </h4>
                                     <br />
                                     <NavLink exact to="/projects">
                                         <h4 className="lower-button"> see my projects </h4>
                                     </NavLink>
-                                </Col>
-                                <Col>
-                                    <img src={ Monument } alt="Monument Health" className="profile-img" />
-                                </Col>
-                            </Row>
-                        </Container>,
-                        <Container>
-                            <Row className="profile-row lower">
-                                <Col className="my-auto">
-                                    <h2> Past Experience </h2>
-                                    <br />
-                                    <h4> 
-                                        Previously I worked in the healthcare industry as a Data Engineer 
-                                        where my work primarily surrounded ETL pipeline development using
-                                        Python, Google BigQuery, and other Google Cloud Platform technologies.
-                                        Additionally, I worked with a Health and Wellness application built in 
-                                        PHP and Laravel. This included troubleshooting outages and migration to 
-                                        Google Cloud Platform from Amazon Web Services.
-                                    </h4>
                                 </Col>
                                 <Col>
                                     <img src={ Server } alt="Work Experience" className="profile-img" />
@@ -268,16 +245,6 @@ class Home extends Component {
                                         <Col>
                                             <a href="https://www.uccs.edu/" target="_blank" rel="noreferrer">
                                                 <img src={ UCCS } alt="UCCS" className="acc-img" />
-                                            </a>
-                                        </Col>
-                                        <Col>
-                                            <a href="https://www.colorado.edu/" target="_blank" rel="noreferrer">
-                                                <img src={ CUB } alt="CU Boulder" className="acc-img" />
-                                            </a>
-                                        </Col>
-                                        <Col>
-                                            <a href="https://www.coloradomesa.edu/" target="_blank" rel="noreferrer">
-                                                <img src={ CMU } alt="Colorado Mesa" className="acc-img" />
                                             </a>
                                         </Col>
                                         <Col sm={4} />
